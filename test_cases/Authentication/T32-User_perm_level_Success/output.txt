@@ -1,0 +1,5 @@
+Status: SUCCESS
+Msg: Publishing access granted
+UserID: [Usr_DevID]
+Page: Publishing
+PublishingAccess: Yes

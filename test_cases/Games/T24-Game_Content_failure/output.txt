@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: Security threat detected. Game submission rejected
+GameID: [GameID]
+MalwareDetected: Yes

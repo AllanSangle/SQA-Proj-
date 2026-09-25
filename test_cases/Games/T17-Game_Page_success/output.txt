@@ -1,0 +1,3 @@
+Status: SUCCESS
+Msg: [GameID] info found
+GamePage: [GameID]

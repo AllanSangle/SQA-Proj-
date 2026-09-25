@@ -1,0 +1,2 @@
+Status: Failure
+Msg: Game could not be uploaded 

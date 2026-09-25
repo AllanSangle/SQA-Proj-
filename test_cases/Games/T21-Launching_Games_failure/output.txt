@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: Game must be installed before launching
+GameID: [GameID]
+GameRunning: No

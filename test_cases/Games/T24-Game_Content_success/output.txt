@@ -1,0 +1,4 @@
+Status: SUCCESS
+Msg: No malware detected
+GameID: [GameID]
+MalwareDetected: No

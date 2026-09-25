@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: Publishing access requires a verified developer account
+UserID: [Usr_GenID]
+PublishingAccess: No

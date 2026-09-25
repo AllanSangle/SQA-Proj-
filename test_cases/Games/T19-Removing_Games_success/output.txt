@@ -1,0 +1,2 @@
+Status: SUCCESS
+Msg: [gameID] has been removed from server 
