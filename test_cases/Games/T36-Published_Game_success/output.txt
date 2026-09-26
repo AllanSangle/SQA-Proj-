@@ -1,0 +1,3 @@
+Status: SUCCESS
+Msg: New game [GameID] appears in the main page catalog.
+GameID: [GameID]

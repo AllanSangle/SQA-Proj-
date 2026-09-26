@@ -1,0 +1,6 @@
+Status: SUCCESS
+Msg: Game information of [GameID] was edited by [PublisherID].
+PublisherID: [PublisherID]
+GameID: [GameID]
+Info: [NewInfo]
+EditedInfo: Yes

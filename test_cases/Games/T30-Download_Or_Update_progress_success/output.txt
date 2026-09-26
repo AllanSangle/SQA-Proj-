@@ -1,0 +1,4 @@
+Status: SUCCESS
+Msg: Download progressing sufficiently
+GameID: [GameID]
+DownloadProgress: [DownloadProgress]%

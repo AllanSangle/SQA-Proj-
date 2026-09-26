@@ -1,0 +1,3 @@
+Status: FAILURE
+Msg: New game [GameID] isn't appearing in the main page catalog.
+GameID: [GameID]

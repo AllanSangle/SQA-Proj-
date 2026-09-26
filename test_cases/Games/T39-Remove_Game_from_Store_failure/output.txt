@@ -1,0 +1,5 @@
+Status: FAILURE
+Msg: Game information cannot be removed by [PublisherID] as they are not the publisher for [GameID].
+PublisherID: [PublisherID]
+GameID: [GameID]
+GameRemoved: No

@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: Percentage in progress bar doesn't match byte download completion
+GameID: [GameID]
+DownloadProgress: [DownloadProgress]%
