@@ -1,0 +1,3 @@
+Status: FAILURE
+Msg: Gift recipient not found
+GiftDelivered: No

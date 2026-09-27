@@ -1,0 +1,3 @@
+Status: Failed
+Msg: game could be refunded 
+isRefunded: No

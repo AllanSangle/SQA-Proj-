@@ -1,0 +1,3 @@
+Status: Failure
+Msg: invalid funds [GameID] could not be purchased
+GamePurchased: No

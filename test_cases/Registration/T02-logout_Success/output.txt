@@ -1,0 +1,4 @@
+Status: Success
+Msg: [UserID] has logged off [DateTime]
+Page: Sign-In
+Login: no

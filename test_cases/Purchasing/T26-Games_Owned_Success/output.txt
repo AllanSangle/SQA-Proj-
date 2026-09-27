@@ -1,0 +1,3 @@
+Status: Success
+Msg: [GameID] has been added to [UserID] library
+GamePurchased: No

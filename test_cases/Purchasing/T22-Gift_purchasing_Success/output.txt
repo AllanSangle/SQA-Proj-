@@ -1,0 +1,3 @@
+Status: SUCCESS
+Msg: [GameID] was sent to [OtherUserID]
+GiftDelivered: Yes
