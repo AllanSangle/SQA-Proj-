@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: Failed to connect to [OnlineServer]. Online multiplayer can not be accessed.
+UserID: [UserID]
+ConnectedOnline: No

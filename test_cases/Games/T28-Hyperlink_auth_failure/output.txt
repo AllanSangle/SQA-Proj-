@@ -1,0 +1,4 @@
+Status: FAILURE
+Msg: User [OtherUserID] not authenticated.
+UserID: [UserID]
+AccountAccess: No

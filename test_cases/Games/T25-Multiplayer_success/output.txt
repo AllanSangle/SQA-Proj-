@@ -1,0 +1,5 @@
+Status: SUCCESS
+Msg: Connected to [OnlineServer]. Online multiplayer can be accessed.
+UserID: [UserID]
+ConnectedOnline: Yes
+MatchmakingRegion: [MatchmakingRegion]

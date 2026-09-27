@@ -1,0 +1,5 @@
+Status: FAILURE
+Msg: Game information cannot be edited by [PublisherID] as they are not the publisher for [GameID].
+PublisherID: [PublisherID]
+GameID: [GameID]
+EditedInfo: No

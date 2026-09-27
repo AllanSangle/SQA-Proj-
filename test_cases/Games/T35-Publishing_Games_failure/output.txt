@@ -1,0 +1,5 @@
+Status: FAILURE
+Msg: [GameTitle] wasn't published because [Publisher] isn't an authorized publisher.
+Publisher: [Publisher]
+GameTitle: [GameTitle]
+Published: No

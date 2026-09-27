@@ -1,0 +1,5 @@
+Status: SUCCESS
+Msg: [filterResultsCount] game(s) matching the [FilterParameters] found.
+Filter: [FilterParameters]
+Game1: [Title1] [GameID1]
+Game2: [Title2] [GameID2]

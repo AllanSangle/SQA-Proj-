@@ -1,0 +1,6 @@
+Status: SUCCESS
+Msg: [searchResultsCount] game(s) found
+Searched: [SearchQuery]
+Game1: [Title1] [GameID1]
+Game2: [Title2] [GameID2]
+SearchResultsFound: Yes
