@@ -1,0 +1,4 @@
+Example Game 1             FullUser1      
+Example Game 2             RegularUser2   
+Example Game 3             RegularUser1   
+END
