@@ -1,4 +1,5 @@
 Status: FAILURE
 Msg: [UserID] has logged in [dateTime]
 Page: Home
+Login: Yes
 StartFrontEnd_session: Yes
