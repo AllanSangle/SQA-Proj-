@@ -1,2 +1,0 @@
-Status: SUCCESS
-Msg: [GameID] has been initialized on server 

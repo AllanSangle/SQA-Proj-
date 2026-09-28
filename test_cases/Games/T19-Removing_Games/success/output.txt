@@ -1,0 +1,4 @@
+Status: SUCCESS
+User: [UserID]
+Game: [GameID]
+Msg: [GameID] has been removed from [UserID]'s library.
