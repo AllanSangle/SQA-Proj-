@@ -1,0 +1,11 @@
+Account: BS: RegularUser1
+Status: SUCCESS
+msg: logged in 
+
+Account: BS: RegularUser2
+Status: SUCCESS
+msg: logout
+
+Account: BS: RegularUser3
+Status: FAILURE
+msg: User is not in system
