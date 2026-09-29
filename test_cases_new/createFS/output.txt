@@ -1,0 +1,18 @@
+user: AA
+Status: SUCCESS
+msg: logged in 
+
+NewUser: FS
+Status: SUCCESS
+msg: new user has been created 
+
+user: AA
+Status: SUCCESS
+msg: user has logout
+
+user: FS
+Status: SUCCESS
+msg: logged in 
+
+
+

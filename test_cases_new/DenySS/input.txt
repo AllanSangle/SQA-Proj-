@@ -1,0 +1,6 @@
+login 
+Account: SS
+addcredit: 00025.00
+buy: Example Game 1
+logout
+

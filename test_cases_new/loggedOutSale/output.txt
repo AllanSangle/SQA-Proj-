@@ -1,0 +1,18 @@
+Account: SS
+Status: SUCCESS
+msg: logged in 
+
+newGame: {Example Game 1} 
+price: {000025.00}
+Status: Success
+Msg: added game to listing 
+
+Account: SS
+Status: SUCCESS
+msg: logout
+
+newGame: {Example Game 2} 
+price: {000050.00}
+Status: FAILURE
+Msg: cannot sell game please log in  
+

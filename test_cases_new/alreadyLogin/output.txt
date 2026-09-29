@@ -1,0 +1,9 @@
+Account: SS
+Status: SUCCESS
+msg: logged in 
+
+Account: BS 
+Status: FAILURE 
+Msg: please sign out
+
+msg: Amount transfered to SS  

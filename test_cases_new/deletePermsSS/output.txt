@@ -1,0 +1,10 @@
+user: SS
+Status: SUCCESS
+msg: logged in 
+
+DeleteUser: BS
+Status: FAILURE
+msg: need higher access
+
+
+

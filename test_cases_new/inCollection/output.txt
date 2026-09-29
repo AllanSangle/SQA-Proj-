@@ -1,0 +1,19 @@
+user: BS
+Status: SUCCESS
+msg: logged in 
+
+Amount: 000025.00
+Status: SUCCESS
+msg: Amount transfered to BS
+
+Game: Example Game 1
+Status:SUCCESS
+msg: Game is added to library 
+
+Amount: 000025.00
+Status: SUCCESS
+msg: Amount transfered to BS
+
+Game: Example Game 1
+Status: FAILURE 
+msg: game cannot be added to library  

@@ -1,0 +1,8 @@
+login 
+User: AA
+delete: BS 
+logout
+
+login 
+user: BS
+logout
