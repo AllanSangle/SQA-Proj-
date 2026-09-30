@@ -1,0 +1,17 @@
+user: AA
+Status: SUCCESS
+msg: logged in 
+
+NewUser: FS
+UserName: tester
+Status: FAILURE
+msg: cannot create account 
+
+user: AA
+Status: SUCCESS
+msg: Logged out
+
+user: FS
+Status: FAILURE
+msg: account does not exist
+

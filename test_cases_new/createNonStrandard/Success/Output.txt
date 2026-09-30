@@ -1,0 +1,17 @@
+Account: AA
+Status: SUCCESS
+msg: Logged in 
+
+Account: XX
+UsrName: Tester
+Status: FAILURE
+msg: user permsissions not found 
+
+Account: AA
+Status: SUCCESS
+msg: logged out 
+
+Account: XX
+Status: FAILURE
+msg: could not find account 
+

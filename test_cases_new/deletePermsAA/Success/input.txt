@@ -1,0 +1,4 @@
+login 
+User: AA
+delete: SS 
+logout

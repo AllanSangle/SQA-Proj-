@@ -1,0 +1,20 @@
+Account: SS
+Status: SUCCESS
+msg: Logged in 
+
+Account: BS
+UsrName: "tester"
+Status: SUCCESS
+msg: created account in system
+
+Account: SS
+Status: SUCCESS
+msg: Logged out
+
+Account: BS:tester
+Status: SUCCESS
+msg: Logged in 
+
+Account: BS
+Status: SUCCESS
+msg: Logged out

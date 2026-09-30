@@ -1,0 +1,16 @@
+Account: SS
+Status: SUCCESS
+msg: Logged in 
+
+Account: BS
+UsrName: "tester"
+Status: FAILURE
+msg: insuffienct permsissions 
+
+Account: SS
+Status: SUCCESS
+msg: Logged out
+
+Account: BS:tester
+Status: FAILURE
+msg: cannot find account 

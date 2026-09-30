@@ -1,0 +1,7 @@
+Login 
+User: BS
+addcredit: 00050.00
+buy: example game 1 
+logout 
+addcredit: 00001.00
+buy: example game 1 

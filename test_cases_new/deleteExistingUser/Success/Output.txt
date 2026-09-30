@@ -1,0 +1,11 @@
+Account: AA
+Status: SUCCESS
+msg: Logged in
+
+DeleteUser: BS:RegularUser3
+Status: FAILURE
+msg: Account does not exist
+
+Account: AA
+Status:SUCCESS
+msg: logged out

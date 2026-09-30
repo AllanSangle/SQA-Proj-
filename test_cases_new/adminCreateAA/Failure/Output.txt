@@ -1,0 +1,16 @@
+user: AA
+Status: SUCCESS
+msg: logged in 
+
+NewUser: AA2
+Status: FAILURE
+msg: cannot create account 
+
+user: AA
+Status: SUCCESS
+msg: Logged out
+
+user: AA2
+Status: FAILURE
+msg: account does not exist
+

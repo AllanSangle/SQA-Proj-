@@ -1,0 +1,8 @@
+Account: AA
+Status: SUCCESS
+msg: logged in 
+
+Account: BS
+UsrName: RegularUser1
+Status: FAILURE
+msg: username is already in system

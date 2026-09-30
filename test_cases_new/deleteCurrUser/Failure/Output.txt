@@ -1,0 +1,12 @@
+user: AA: AdminUser1
+Status: SUCCESS
+msg: logged in 
+
+DeleteUser: AA: AdminUser1
+Status: SUCCESS
+msg: elevated permsissions required
+
+user: AA: AdminUser1
+Status: FAILURE
+msg: Account not found 
+

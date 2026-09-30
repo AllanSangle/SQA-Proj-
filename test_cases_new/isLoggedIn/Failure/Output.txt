@@ -1,0 +1,23 @@
+Account: BS
+Status: SUCCESS
+msg: logged in 
+
+Amount: 000050.00
+Status: SUCCESS
+msg: Amount transfered to BS
+
+User: BS
+Status: SUCCESS
+msg: game has been added to library 
+
+Account: BS
+Status: SUCCESS
+msg: logged out
+
+Amount: 000001.00
+Status: Success
+msg: Amount transfered to BS
+
+User: BS
+Status: FAILURE
+msg: game has been added to library 

@@ -1,0 +1,12 @@
+Account: AA
+Status: SUCCESS
+msg: logged in
+
+Account: BS
+UsrName: over limit example name
+Status: SUCCESS
+msg: created user in system 
+
+Account: AA 
+Status: SUCCESS
+msg: logged out 

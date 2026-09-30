@@ -1,0 +1,15 @@
+user: AA
+Status: SUCCESS
+msg: logged in 
+
+DeleteUser: BS
+Status: SUCCESS
+msg: Account has been removed from system
+
+user: AA
+Status: SUCCESS
+msg: logged out
+
+user: BS 
+Status: FAILURE
+msg: Account not found 

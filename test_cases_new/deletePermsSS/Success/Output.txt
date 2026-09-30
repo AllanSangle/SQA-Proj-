@@ -1,0 +1,12 @@
+user: SS
+Status: SUCCESS
+msg: logged in 
+
+DeleteUser: FS
+Status: SUCCESS
+msg: Account has been removed from system
+
+user: SS
+Status: SUCCESS
+msg: logged out
+
