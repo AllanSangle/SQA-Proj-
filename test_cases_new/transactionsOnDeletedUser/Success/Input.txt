@@ -1,8 +1,0 @@
-login 
-user: AA
-Delete: BS
-logout 
-
-login 
-User: BS
-logout 

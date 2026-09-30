@@ -3,6 +3,7 @@ Status: SUCCESS
 msg: logged in 
 
 NewUser: BS
+UsrName: RegularTester
 Status: FAILURE
 msg: cannot create account 
 

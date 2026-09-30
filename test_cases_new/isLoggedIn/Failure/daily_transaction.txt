@@ -1,0 +1,5 @@
+06 RegularUser1    BS 000050.00
+04 Example Game 1             PublishingUser1 RegularUser1    0025.00
+00 RegularUser1    BS 000025.00
+06 RegularUser1    BS 000026.00
+04 Example Game 1             PublishingUser1 RegularUser1    0025.00

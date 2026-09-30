@@ -3,6 +3,7 @@ Status: SUCCESS
 msg: logged in 
 
 NewUser: AA2
+UsrName: AdminTester
 Status: SUCCESS
 msg: new user has been created 
 

@@ -3,6 +3,7 @@ Status: SUCCESS
 msg: logged in 
 
 NewUser: SS
+UsrName: publishtester
 Status: FAILURE
 msg: cannot create account 
 

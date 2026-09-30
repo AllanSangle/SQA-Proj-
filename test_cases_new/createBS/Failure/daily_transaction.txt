@@ -1,0 +1,3 @@
+01 Tester          BS 000000.00
+00 RegularUser1    BS 000000.00
+00 Tester          BS 000000.00

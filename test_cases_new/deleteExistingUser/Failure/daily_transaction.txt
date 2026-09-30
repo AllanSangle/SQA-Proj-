@@ -1,0 +1,2 @@
+02 RegularUser3    BS 000000.00
+00 AdminUser1      AS 000000.00
