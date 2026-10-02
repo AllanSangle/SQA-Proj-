@@ -1,5 +1,0 @@
-Login 
-User: AA
-addcredit: 10000000.00
-user: BS
-logout

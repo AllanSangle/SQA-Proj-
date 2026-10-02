@@ -1,3 +1,0 @@
-01 Tester          XX 000000.00
-00 FullUser1       FS 000000.00
-00 Tester          XX 000000.00

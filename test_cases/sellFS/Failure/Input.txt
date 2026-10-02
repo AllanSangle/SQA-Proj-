@@ -1,0 +1,4 @@
+login
+FullUser1
+sell
+logout

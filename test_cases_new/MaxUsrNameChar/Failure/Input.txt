@@ -1,5 +1,0 @@
-Login 
-User: AA
-create: BS
-UserName: "over limit example name"
-logout 

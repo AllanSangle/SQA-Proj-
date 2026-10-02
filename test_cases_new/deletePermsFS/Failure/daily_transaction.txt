@@ -1,2 +1,0 @@
-02 PublishingUser1 SS 000000.00
-00 FullUser1       FS 000000.00

@@ -1,0 +1,5 @@
+login
+AdminUser1
+delete
+AdminUser1
+logout

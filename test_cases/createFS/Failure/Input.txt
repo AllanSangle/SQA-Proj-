@@ -1,0 +1,9 @@
+login
+FullUser1
+create
+FullUser20
+FS
+logout
+login
+FullUser20
+logout

@@ -1,4 +1,0 @@
-Status: FAILURE
-User: [UserID]
-Game: [GameID]
-Msg: [GameID] could not be removed.

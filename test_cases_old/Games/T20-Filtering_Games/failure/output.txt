@@ -1,3 +1,0 @@
-Status: Failure
-Msg: Games could not be filtered
-filterApplied: No

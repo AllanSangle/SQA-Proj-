@@ -1,4 +1,0 @@
-Status: Success
-Msg: [UserEmail] is not valid
-Page: Sign-In
-Login: no

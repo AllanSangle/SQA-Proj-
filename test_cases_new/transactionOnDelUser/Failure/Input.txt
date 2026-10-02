@@ -1,6 +1,0 @@
-Login
-User: AA
-delete: BS
-addcredit: 00050.00
-user:BS
-logout

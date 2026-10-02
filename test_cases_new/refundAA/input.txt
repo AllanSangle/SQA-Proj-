@@ -1,6 +1,0 @@
-Login 
-User: AA
-addcredit: AA 
-amount: 00025.00
-buy: example game 1 
-refund 

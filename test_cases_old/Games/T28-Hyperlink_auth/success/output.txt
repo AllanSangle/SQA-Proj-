@@ -1,4 +1,0 @@
-Status: SUCCESS
-Msg: User [OtherUserID] authenticated.
-UserID: [OtherUserID]
-AccountAccess: Yes

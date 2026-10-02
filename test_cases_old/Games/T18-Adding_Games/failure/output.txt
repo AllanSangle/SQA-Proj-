@@ -1,6 +1,0 @@
-Status: Failure
-User: [UserID]
-Game: [GameID]
-Cost: [GamePrice]
-Balance: [Balance]
-Msg: [GameID] was not added to [UserID]'s library due to insufficient funds.

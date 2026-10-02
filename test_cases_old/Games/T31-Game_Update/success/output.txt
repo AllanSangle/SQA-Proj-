@@ -1,4 +1,0 @@
-Status: SUCCESS
-Msg; Updating [GameID]
-GameID: [GameID]
-Updating: Yes

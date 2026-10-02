@@ -1,5 +1,0 @@
-# [UserID] [UserEmail] + [DateTime]
-Status: Success
-Msg: [UserID] has been created 
-Page: Home
-Login: Yes

@@ -1,0 +1,7 @@
+create
+login
+AdminUser1
+create
+RegularUser20
+BS
+logout

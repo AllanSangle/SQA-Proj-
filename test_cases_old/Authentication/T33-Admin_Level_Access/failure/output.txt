@@ -1,4 +1,0 @@
-Status: Failure
-Msg: Administrator access denied
-UserID: [Usr_GenID]
-AdminAccess: No

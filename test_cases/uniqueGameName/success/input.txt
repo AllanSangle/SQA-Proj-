@@ -1,0 +1,5 @@
+login
+AdminUser1
+sell
+Example Game 5
+logout

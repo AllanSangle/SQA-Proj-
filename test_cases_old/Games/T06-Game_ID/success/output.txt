@@ -1,6 +1,0 @@
-Status: SUCCESS
-Msg: Game found
-GameID: [GameID]
-Title: [Game_Name]
-Developer: [DevStudio]
-GameIdentified: Yes

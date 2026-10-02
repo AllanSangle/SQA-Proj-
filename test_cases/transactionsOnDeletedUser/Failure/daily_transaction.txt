@@ -1,0 +1,3 @@
+02 RegularUser1    BS 999900.00
+06 RegularUser1    BS 999910.00
+00 AdminUser1      AA 002000.00

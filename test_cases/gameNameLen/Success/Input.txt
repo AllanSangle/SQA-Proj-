@@ -1,0 +1,5 @@
+login
+AdminUser1
+sell
+Example Long Name Game 1234
+logout

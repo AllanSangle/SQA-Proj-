@@ -1,0 +1,4 @@
+login
+PublishingUser1
+sell
+logout

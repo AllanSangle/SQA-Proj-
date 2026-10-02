@@ -1,3 +1,0 @@
-Status: SUCCESS
-Msg: successful added card
-GameOwned: No

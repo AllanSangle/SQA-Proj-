@@ -1,2 +1,0 @@
-[GameID].zip /scan
-

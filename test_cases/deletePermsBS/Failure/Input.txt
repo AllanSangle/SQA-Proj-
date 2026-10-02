@@ -1,0 +1,5 @@
+login
+RegularUser1
+delete
+FullUser1
+logout

@@ -1,4 +1,0 @@
-Status: SUCCESS
-Msg: [GameID] successfully launched
-GameID: [GameID]
-gameRunning: yes

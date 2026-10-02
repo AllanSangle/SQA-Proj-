@@ -1,0 +1,8 @@
+login
+AdminUser1
+buy
+Example Game 6
+buy
+Example Game 1
+PublishingUser1
+logout

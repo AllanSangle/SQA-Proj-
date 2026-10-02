@@ -1,0 +1,2 @@
+05 AdminUser1      PublishingUser1 000065.00
+00 AdminUser1      AA 002065.00

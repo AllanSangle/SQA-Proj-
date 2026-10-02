@@ -1,4 +1,0 @@
-Login 
-usr: AA:AdminUser1
-delete: AA:AdminUser1
-logout 

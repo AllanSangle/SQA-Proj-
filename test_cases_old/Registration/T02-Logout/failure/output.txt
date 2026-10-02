@@ -1,4 +1,0 @@
-Status: Failure
-Msg: could not log out [UserID]
-Page: home
-Login: yes

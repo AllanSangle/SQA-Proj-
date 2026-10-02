@@ -1,5 +1,0 @@
-Status: SUCCESS
-Msg: Administrator access granted
-UserID: [usr_AdminID]
-Page: Admin Dashboard
-AdminAccess: Yes

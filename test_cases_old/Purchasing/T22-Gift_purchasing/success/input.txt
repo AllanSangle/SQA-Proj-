@@ -1,1 +1,0 @@
-[GameID] [UserID] [OtheruserID] /purchase  

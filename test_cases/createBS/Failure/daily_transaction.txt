@@ -1,0 +1,3 @@
+01 RegularUser20   BS 000000.00
+00 RegularUser1    BS 999900.00
+00 RegularUser20   BS 000000.00

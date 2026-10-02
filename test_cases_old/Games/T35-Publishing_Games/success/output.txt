@@ -1,5 +1,0 @@
-Status: SUCCESS
-Msg: [GameTitle] was published by [Publisher].
-Publisher: [Publisher]
-GameTitle: [GameTitle]
-Published: Yes

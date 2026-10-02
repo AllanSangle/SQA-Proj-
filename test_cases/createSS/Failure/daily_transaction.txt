@@ -1,0 +1,4 @@
+01 PublishingUser5 SS 000000.00
+00 PublishingUser1 SS 001000.00
+00 PublishingUser5 SS 000000.00
+

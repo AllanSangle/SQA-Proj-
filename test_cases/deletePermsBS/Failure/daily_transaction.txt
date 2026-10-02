@@ -1,0 +1,2 @@
+02 FullUser1       FS 000500.00
+00 RegularUser1    BS 999900.00

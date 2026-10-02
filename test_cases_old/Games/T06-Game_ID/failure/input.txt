@@ -1,3 +1,0 @@
-#[GameID] = [Game_Name + Date_Published + DevStudio]
-
-[GameID] /get

@@ -1,5 +1,0 @@
-Status: SUCCESS
-Msg: [GameID] was removed by [PublisherID].
-PublisherID: [PublisherID]
-GameID: [GameID]
-GameRemoved: Yes

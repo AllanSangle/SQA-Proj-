@@ -1,4 +1,0 @@
-Login 
-User: AA
-delete: BS:RegularUser3
-logout

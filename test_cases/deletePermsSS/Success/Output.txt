@@ -1,0 +1,10 @@
+Enter a transaction:
+Username:
+Successfully Logged In. Welcome, PublishingUser1
+Available Games:
+*game transaction list*
+Enter a transaction:
+ERROR: You can't delete accounts as a SS user. You must be an admin to delete accounts.
+Enter a transaction:
+Successfully Logged Out!
+Enter a transaction:

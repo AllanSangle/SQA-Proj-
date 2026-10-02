@@ -1,0 +1,11 @@
+login
+AdminUser1
+refund
+RegularUser1
+PublishingUser1
+2000.00
+refund
+RegularUser1
+PublishingUser1
+65.00
+logout

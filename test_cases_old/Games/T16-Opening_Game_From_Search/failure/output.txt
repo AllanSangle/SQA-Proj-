@@ -1,3 +1,0 @@
-Status: Failure
-Msg: Game not found 
-GameID: [GameID]

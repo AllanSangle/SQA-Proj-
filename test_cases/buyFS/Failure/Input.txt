@@ -1,0 +1,6 @@
+login
+FullUser1
+buy
+Example Game 1
+PublishingUser1
+logout

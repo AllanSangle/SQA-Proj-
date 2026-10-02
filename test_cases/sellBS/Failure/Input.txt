@@ -1,0 +1,6 @@
+login
+RegularUser1
+sell
+Example Game 6
+10.00
+logout

@@ -1,0 +1,5 @@
+Enter a transaction:
+Enter the new account's username:
+Enter the new account's type:
+Successfully Created BS user User
+Enter a transaction:

@@ -1,0 +1,9 @@
+login
+AdminUser1
+sell
+Example Game 6
+1000.00
+sell
+Example Game 6
+50.00
+logout

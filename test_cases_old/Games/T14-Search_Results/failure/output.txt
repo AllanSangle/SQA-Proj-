@@ -1,4 +1,0 @@
-Status: FAILURE
-Msg: No Games Found
-Searched: [SearchQuery]
-SearchResultsFound: No

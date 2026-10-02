@@ -1,2 +1,0 @@
-[GameName].zip /upload 
-

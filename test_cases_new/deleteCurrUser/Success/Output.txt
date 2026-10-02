@@ -1,7 +1,0 @@
-user: AA: AdminUser1
-Status: SUCCESS
-msg: logged in 
-
-DeleteUser: AA: AdminUser1
-Status: FAILURE
-msg: cannot delete logged in user 

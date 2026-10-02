@@ -1,0 +1,7 @@
+login
+RegularUser20
+login
+AdminUser1
+delete
+RegularUser20
+logout

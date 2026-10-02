@@ -1,5 +1,0 @@
-Status: SUCCESS
-Msg: Game library loaded
-UserID: [usr_GenID]
-Games:[GameList]
-TotalGames: [numGames]

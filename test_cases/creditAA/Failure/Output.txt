@@ -1,0 +1,16 @@
+Enter a transaction:
+Username:
+Successfully Logged In. Welcome, AdminUser1
+Available Games:
+Example Game 1             PublishingUser1 025.00
+Example Game 2             PublishingUser1 040.00
+Example Game 3             PublishingUser1 065.00
+Example Game 4             PublishingUser2 020.00
+Example Game 5             PublishingUser2 035.00
+Enter a transaction:
+Enter the amount of credits to add:
+Enter the username of the user to add credits to:
+ERROR: Failed to add credits.
+Enter a transaction:
+Successfully logged out.
+Enter a transaction:

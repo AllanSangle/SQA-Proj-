@@ -1,0 +1,3 @@
+01 FullUser20      FS 000000.00
+00 FullUser1       FS 000500.00
+00 FullUser20      FS 000000.00

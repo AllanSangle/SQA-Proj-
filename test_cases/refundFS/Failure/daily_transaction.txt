@@ -1,0 +1,2 @@
+05 FullUser1       FullUser1       000025.00
+00 FullUser1       FS 000525.00

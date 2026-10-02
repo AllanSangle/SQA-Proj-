@@ -1,0 +1,14 @@
+login
+FullUser1
+addcredit
+500.00
+addcredit
+600.00
+addcredit
+200.00
+logout
+login
+FullUser1
+login
+200.00
+logout

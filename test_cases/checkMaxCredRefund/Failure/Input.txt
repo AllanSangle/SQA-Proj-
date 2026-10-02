@@ -1,0 +1,10 @@
+login
+AdminUser1
+addcredit
+80.00
+RegularUser1
+refund
+RegularUser1
+PublishingUser1
+65.00
+logout

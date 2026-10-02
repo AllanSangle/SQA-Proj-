@@ -1,4 +1,0 @@
-Login 
-User: SS
-Sell: {Example Game 1} {001000.00}
-logout 

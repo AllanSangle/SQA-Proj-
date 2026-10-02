@@ -1,0 +1,9 @@
+login
+RegularUser1
+create
+RegularUser20
+BS
+logout
+login
+RegularUser20
+logout
