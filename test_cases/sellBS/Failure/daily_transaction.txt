@@ -1,2 +1,2 @@
-03 Example Game 6             RegularUser1    010.00
+03 Example Game 6            RegularUser1    010.00
 00 RegularUser1    BS 999900.00
