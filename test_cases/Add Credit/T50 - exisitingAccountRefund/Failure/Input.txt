@@ -1,7 +1,0 @@
-login
-AdminUser1
-refund
-RegularUser1
-PublishingUser2
-50.00
-logout

@@ -1,0 +1,16 @@
+|--root/
+ —root/stored_data/
+     —--root/stored_data/available_games.txt
+     —--root/stored_data/current_user_accounts.txt
+     —--root/stored_data/game_collection.txt
+—root/test_cases/
+    —root/test_cases/<test_category>/
+           —-root/test_cases/<test_category>/<test_name>/
+               —-root/test_cases/<test_category>/<test_name>/success/
+                   —-root/test_cases/<test_category>/<test_name>/success/input.txt
+                   —-root/test_cases/<test_category>/<test_name>/success/expected_output.txt
+                   —-root/test_cases/<test_category>/<test_name>/success/daily_transaction.txt
+               —-root/test_cases/<test_category>/<test_name>/failure/
+                   —-root/test_cases/<test_category>/<test_name>/failure/input.txt
+                   —-root/test_cases/<test_category>/<test_name>/failure/expected_output.txt
+                   —-root/test_cases/<test_category>/<test_name>/failure/daily_transaction.txt

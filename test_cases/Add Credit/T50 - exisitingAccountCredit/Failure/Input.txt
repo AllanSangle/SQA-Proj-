@@ -1,0 +1,6 @@
+login
+AdminUser1
+addcredit
+10.00
+RegularUser20
+logout
