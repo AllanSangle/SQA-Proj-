@@ -11,5 +11,9 @@ Enter a transaction:
 Enter the new account's username:
 ERROR: Failed to create user. Usernames can't exceed 15 characters.
 Enter a transaction:
+Enter the new account's username:
+Enter the new account's type:
+Successfully created BS user ValidUsername.
+Enter a transaction:
 Successfully Logged Out!
 Enter a transaction:

@@ -11,5 +11,9 @@ Enter a transaction:
 Enter the new account's username:
 ERROR: Failed to create account. Account already exists with that username.
 Enter a transaction:
+Enter the new account's username:
+Enter the new account's type:
+Successfully created AA user AdminUser3.
+Enter a transaction:
 Successfully Logged Out!
 Enter a transaction:

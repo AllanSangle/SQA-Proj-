@@ -2,4 +2,7 @@ login
 AdminUser1
 create
 AdminUser1
+create
+AdminUser3
+AA
 logout
