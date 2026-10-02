@@ -1,7 +1,7 @@
 AdminUser1      AA 002000.00
 FullUser1       FS 000500.00
-RegularUser1    BS 000100.00
+RegularUser1    BS 999900.00
 RegularUser2    BS 000010.00
 PublishingUser1 SS 001000.00
 PublishingUser2 SS 000800.00
-END
+END                         
