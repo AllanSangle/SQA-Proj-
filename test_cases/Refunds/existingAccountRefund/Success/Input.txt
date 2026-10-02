@@ -1,0 +1,11 @@
+login
+AdminUser1
+refund
+RegularUser1
+PublishingUser20
+25.0
+refund
+RegularUser1
+PublishingUser1
+25.0
+logout

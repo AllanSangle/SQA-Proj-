@@ -1,0 +1,7 @@
+login
+AdminUser1
+refund
+RegularUser1
+PublishingUser20
+25.0
+logout
