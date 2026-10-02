@@ -1,6 +1,0 @@
-login 
-Account: BS
-addcredit: 00025.00
-buy: Example Game 2
-logout
-
