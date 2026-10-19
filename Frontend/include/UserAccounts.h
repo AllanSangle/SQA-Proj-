@@ -2,12 +2,13 @@
 #include <string>
 #include <vector>
 
-#include "Credit.h"
+#include <cstdint>
+#include <string>
 #include "OwnedGame.h"
 
 struct accounts {
     std::string username;
-    Credit credit;
+    int64_t credit;
 };
 
 
@@ -15,11 +16,11 @@ class UserAccounts {
 private:
     std::string username;
     std::string password;
-    Credit credit;
+    int64_t credit;
     std::vector<OwnedGame> ownedGames;
 
 public:
-    void login(std::string username, Credit credit); 
+    void login(std::string username, int64_t credit); 
     void logout(); 
     bool isLoggedIn();
     bool canBuy(); 
@@ -30,7 +31,7 @@ public:
     bool canRefund(); 
     std::string getUserType(); 
     std::string getUsername(); 
-    Credit getBalance();
+    int64_t getBalance();
     std::vector<OwnedGame> getOwnedGames(); 
-    void addCredit(Credit credit);
+    void addCredit(int64_t credit);
 };

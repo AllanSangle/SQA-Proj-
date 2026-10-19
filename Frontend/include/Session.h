@@ -1,4 +1,5 @@
-#pragma once 
+#pragma once
+#include <cstdint> 
 #include "UserAccounts.h"
 
 class Session {
@@ -7,7 +8,7 @@ public:
     void end();
     UserAccounts getCurrentUser();
     bool isActive();
-    void addSessionCredit(Credit amount); 
+    void addSessionCredit(int64_t amount); 
 
 private:
     UserAccounts currentUser();

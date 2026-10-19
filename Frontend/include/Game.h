@@ -1,22 +1,17 @@
 #pragma once
-#include "Credit.h"
+#include <cstdint>
 #include <string>
-
-struct Gamelist {
-    std::string name;
-    std::string seller;
-    Credit price;
-};
+#include <string>
 
 class Game {
 private:
     std::string name;
     std::string seller;
-    Credit price;
+    int64_t price;
 public:
-    Game(std::string name, std::string seller, Credit price);
+    Game(std::string name, std::string seller, int64_t price);
     const std::string& getName() const;
     const std::string& getSeller() const;
-    Credit getPrice() const;
+    int64_t getPrice() const;
 };
 
