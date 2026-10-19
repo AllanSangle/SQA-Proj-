@@ -1,0 +1,26 @@
+How to Run:
+main.ccp can be found in Frontend\src
+
+Preferred/Intended Method: (Requires CMAKE to be installed)
+In the Frontend folder (\Frontend) open run.bat. Once the build is complete begin entering transactions (login, logout, create, delete refund, sell, buy, addcredit, listaccounts)
+
+Alternatively:
+Open terminal in the frontend directory (\Frontend)
+Run ./run.bat
+begin entering transactions
+
+Alternatively:
+Open terminal in the frontend directory (\Frontend)
+Run : g++ -Iinclude src/*.cpp -o main
+Then run: ./main or ./main.exe
+begin entering transactions
+
+begin by entering login
+
+Here are the available usernames already created and can be logged into:
+    AdminUser1
+    FullUser1
+    RegularUser1
+    RegularUser2
+    PublishingUser1
+    PublishingUser2
