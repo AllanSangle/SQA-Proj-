@@ -1,4 +1,13 @@
 |--root/
+ --root/Frontend/
+    ---root/Frontend/src/
+  	---root/Frontend/src/main.cpp
+	---root/Frontend/src/<class>.cpp
+	---root/Frontend/src/Runtime.inc
+    ---root/Frontend/include/
+	---root/Frontend/include/<class>.h
+    ---root/Frontend/output/
+       ---root/Frontend/output/dailytransactions.txt
  —root/stored_data/
      —--root/stored_data/available_games.txt
      —--root/stored_data/current_user_accounts.txt
