@@ -22,8 +22,12 @@ echo.
 echo Data: "%FRONTEND_DATA%"
 echo Transactions: "%FRONTEND_OUTPUT%"
 echo Commands: login, logout, create, delete, sell, buy, refund, addcredit, listaccounts
- echo After logout, press Ctrl+Z then Enter to end input and exit.
+echo After logout, press Ctrl+Z then Enter to end input and exit.
 echo.
-"%FRONTEND_EXE%" "%FRONTEND_DATA%" "%FRONTEND_OUTPUT%"
+
+pushd "%~dp0"
+"%FRONTEND_EXE%" current_user_accounts.txt available_games.txt game_collection.txt "%FRONTEND_OUTPUT%"
 set "FRONTEND_RESULT=%ERRORLEVEL%"
+popd
+
 exit /b %FRONTEND_RESULT%

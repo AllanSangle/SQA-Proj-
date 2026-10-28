@@ -7,19 +7,8 @@
         game_collection.txt
 
     How to Run:
-    Preferred/Intended Method: (Requires CMAKE to be installed)
+    (Requires CMAKE to be installed)
     In the Frontend folder (\Frontend) open run.bat. Once the build is complete begin entering transactions (login, logout, create, delete refund, sell, buy, addcredit, listaccounts)
-
-    Alternatively:
-    Open terminal in the frontend directory (SQA-Proj-\Frontend)
-    Run ./run.bat
-    begin entering transactions
-
-    Alternatively:
-    Open terminal in the frontend directory (SQA-Proj-\Frontend)
-    Run : g++ -Iinclude src/*.cpp -o main
-    Then run: ./main or ./main.exe
-    begin entering transactions
 
     begin by entering login
 
@@ -38,30 +27,45 @@
 
 int main(int argc, char** argv) {
     try {
-        // Sets the path for the directory with user and game information.
+        // Makes sure that the required command line arguements were inputted correctly
+        if (argc != 5) {
+            std::cerr << "INPUT ERROR! In Frontend/build/debug Enter: ./frontend currentaccounts.txt availablegames.txt gamescollection.txt transout.atf\n";
+            return 1;
+        }
+
+        // Sets the path for the directory with the input files (contains user and game information).
         std::filesystem::path data = "../stored_data";
 
-        // Sets the path to save logs of the daily transactions.
-        std::filesystem::path output = "output/daily_transaction.txt";
+        // Sets the directory for the inputed filename in the command.
+        std::filesystem::path accountsFile = data / argv[1];
+        std::filesystem::path availableFile = data / argv[2];
+        std::filesystem::path collectionFile = data / argv[3];
 
-        // Creates the uotput directory if it's not made yet 
+        // The fourth argument is the daily transaction file.
+        std::filesystem::path output = argv[4];
+
+        // Creates the output directory if it's not made yet 
         std::filesystem::create_directories(output.parent_path());
+
 
         // Loads the user accounts to be able to login
         Login login;
-        login.readFile((data / "current_user_accounts.txt").string());
-        
+        login.readFile(accountsFile.string());
+
         // Loads the avaliable games file
         AvailableGamesFile available;
-        available.readFile((data / "available_games.txt").string());
+        available.readFile(availableFile.string());
 
         // Loads the game collection file
         GameCollectionFile collection;
-        collection.readFile((data / "game_collection.txt").string());
+        collection.readFile(collectionFile.string());
 
         // Loads the users to display using the new listsaccounts transactions
         UserAccountsFile userAccounts;
-        userAccounts.readFile((data / "current_user_accounts.txt").string());
+        userAccounts.readFile(accountsFile.string());
+
+
+
 
         // For saving the transactions from the current session, including the end session transaction, then ending the session
         auto finish = [&]() {
@@ -81,8 +85,12 @@ int main(int argc, char** argv) {
             // Ends the session after its logged
             Session s;
             s.end();
-            std::cout << "Logged out. Saved " << log.size() << " transaction record(s) to " << output.string() << '\n';
+
+            std::cout << "Logged out" << '\n';
+
         };
+
+
         // Informs users that the current implementation of the program is a prototype, and the transaction file output destination.
         std::cout << "prototype.\nTransaction file: " << output.string() << "\nTransactions are saved when you log out.\n";
         std::string command; // the transaction that the user enters
