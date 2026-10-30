@@ -9,6 +9,6 @@ addcredit
 logout
 login
 FullUser1
-login
+addcredit
 200.00
 logout

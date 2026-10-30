@@ -3,4 +3,5 @@ AdminUser1
 create
 FullUser20
 FS
+0.00
 logout

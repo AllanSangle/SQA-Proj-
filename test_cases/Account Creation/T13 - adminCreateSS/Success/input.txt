@@ -3,4 +3,5 @@ AdminUser1
 create
 PublishingUser5
 SS
+0.00
 logout

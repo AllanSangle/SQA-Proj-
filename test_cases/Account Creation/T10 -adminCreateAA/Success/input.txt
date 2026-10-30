@@ -3,4 +3,5 @@ AdminUser1
 create
 AdminUser20
 AA
+0.00
 logout

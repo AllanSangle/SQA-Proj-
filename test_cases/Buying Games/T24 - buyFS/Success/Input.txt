@@ -1,6 +1,6 @@
 login
 FullUser1
 buy
-Example Game 1
+Example Game 2
 PublishingUser1
 logout

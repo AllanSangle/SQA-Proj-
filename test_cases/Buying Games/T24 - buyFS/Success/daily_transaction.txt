@@ -1,2 +1,2 @@
-04 Example Game 1            PublishingUser1 FullUser1       025.00
-00 FullUser1       FS 000475.00
+04 Example Game 2            PublishingUser1 FullUser1       040.00
+00 FullUser1       FS 000460.00

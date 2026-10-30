@@ -5,4 +5,5 @@ ExampleLongUsername
 create
 ValidUsername
 BS
+0.00
 logout

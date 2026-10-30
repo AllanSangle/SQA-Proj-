@@ -1,2 +1,2 @@
 06 FullUser1       FS 000010.00
-00 FullUser1       BS 000510.00
+00 FullUser1       FS 000510.00

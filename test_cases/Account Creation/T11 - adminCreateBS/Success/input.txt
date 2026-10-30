@@ -3,4 +3,5 @@ AdminUser1
 create
 RegularUser20
 BS
+0.00
 logout

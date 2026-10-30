@@ -28,7 +28,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <utility>
-inline constexpr int64_t MAX_CREDIT = 99999900;
+inline constexpr int64_t MAX_CREDIT = 99999999;
 inline constexpr int64_t Max_SESSION_CREDIT = 100000;
 inline constexpr int64_t MAX_PRICE = 99999;
 
@@ -112,7 +112,7 @@ namespace runtime {
     }
 
     inline void loggedIn() {
-        require(active, "Please log in first.");
+        require(active, "Login using \"login\" transaction before performing any other transactions.");
     }
 
     inline void administrator() {
@@ -127,7 +127,7 @@ namespace runtime {
     }
 
     inline std::string ask(const std::string& prompt) {
-        std::cout << prompt;
+        std::cout << prompt << '\n';
         std::string s;
         if (!std::getline(std::cin, s))
             throw std::runtime_error("Input ended.");

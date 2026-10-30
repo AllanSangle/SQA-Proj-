@@ -1,6 +1,6 @@
 login
 AdminUser1
 sell
-Example Game 6
+Example Game 7
 10.00
 logout
