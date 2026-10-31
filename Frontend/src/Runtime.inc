@@ -19,6 +19,7 @@
 #include "DeleteUser.h"
 #include "GameCatalogPage.h"
 #include "ListAccounts.h"
+#include "Search.h"
 #include <algorithm>
 #include <fstream>
 #include <iomanip>

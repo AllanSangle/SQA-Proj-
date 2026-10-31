@@ -199,6 +199,11 @@ int main(int argc, char** argv) {
                     // Displays the active accounts after checking administrator permission
                     ListAccounts l;
                     l.display(userAccounts, std::cout);
+                } else if (command == "search") {
+                    // searches for users and games
+                    auto query = runtime::ask("Enter Search:");
+                    Search s;
+                    s.display(query, std::cout);
                 } else {
                     // Reports input that is not a supported transaction.
                     throw std::runtime_error("Unknown command");
