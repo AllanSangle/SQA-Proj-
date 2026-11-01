@@ -1,0 +1,16 @@
+login
+RegularUser1
+listaccounts
+logout
+login
+PublishingUser1
+listaccounts
+logout
+login
+FullUser1
+listaccounts
+logout
+login
+AdminUser1
+listaccounts
+logout

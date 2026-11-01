@@ -1,0 +1,15 @@
+login
+RegularUser1
+search
+Admin
+logout
+login
+PublishingUser1
+search
+Admin
+logout
+login
+FullUser1
+search
+Admin
+logout
