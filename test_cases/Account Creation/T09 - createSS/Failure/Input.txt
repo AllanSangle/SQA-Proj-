@@ -1,9 +1,4 @@
 login
 PublishingUser1
 create
-PublishingUser5
-SS
-logout
-login
-PublishingUser5
 logout

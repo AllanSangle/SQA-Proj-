@@ -2,5 +2,5 @@ login
 AdminUser1
 create
 FullUser20
-FS
+FA
 logout

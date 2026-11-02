@@ -2,3 +2,10 @@ login
 RegularUser1
 create
 logout
+login
+AdminUser1
+create
+RegularUser3
+BS
+0
+logout

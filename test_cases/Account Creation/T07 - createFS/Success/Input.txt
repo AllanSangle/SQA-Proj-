@@ -2,3 +2,10 @@ login
 FullUser1
 create
 logout
+login
+AdminUser1
+create
+FullUser3
+FS
+0
+logout

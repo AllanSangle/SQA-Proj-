@@ -2,3 +2,10 @@ login
 PublishingUser1
 create
 logout
+login
+AdminUser1
+create
+PublishingUser3
+SS
+0
+logout
