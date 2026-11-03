@@ -3,6 +3,6 @@ AdminUser1
 delete
 RegularUser1
 addcredit
+10
 RegularUser1
-10.00
 logout

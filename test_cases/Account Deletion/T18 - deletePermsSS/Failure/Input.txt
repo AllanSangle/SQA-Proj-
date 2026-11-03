@@ -1,5 +1,4 @@
 login
 PublishingUser1
 delete
-RegularUser1
 logout

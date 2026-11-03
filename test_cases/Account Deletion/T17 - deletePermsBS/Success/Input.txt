@@ -2,3 +2,8 @@ login
 RegularUser1
 delete
 logout
+login
+AdminUser1
+delete
+RegularUser1
+logout

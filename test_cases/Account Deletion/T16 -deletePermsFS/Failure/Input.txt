@@ -1,5 +1,4 @@
 login
 FullUser1
 delete
-RegularUser1
 logout

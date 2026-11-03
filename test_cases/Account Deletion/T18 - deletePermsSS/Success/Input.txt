@@ -2,3 +2,8 @@ login
 PublishingUser1
 delete
 logout
+login
+AdminUser1
+delete
+PublishingUser1
+logout

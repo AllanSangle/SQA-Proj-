@@ -1,5 +1,5 @@
 login
 AdminUser1
 delete
-RegularUser1
+Regul arUser1
 logout

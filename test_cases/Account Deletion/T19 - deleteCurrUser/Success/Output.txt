@@ -12,5 +12,8 @@ Enter a transaction:
 Enter the username of the account to delete:
 ERROR: Failed to delete account. You can't delete an account you're currently signed into.
 Enter a transaction:
+Enter the username of the account to delete:
+Successfully deleted RegularUser1.
+Enter a transaction:
 Successfully Logged Out!
 Enter a transaction:

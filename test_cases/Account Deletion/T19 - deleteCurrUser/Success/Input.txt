@@ -2,4 +2,6 @@ login
 AdminUser1
 delete
 AdminUser1
+delete
+RegularUser1
 logout

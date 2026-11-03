@@ -16,5 +16,9 @@ Enter the amount of credits to add:
 Enter the username of the user to add credits to:
 ERROR: Failed to add credits. No accounts exist with that username.
 Enter a transaction:
+Enter the amount of credits to add:
+Enter the username of the user to add credits to:
+Successfully added $10.00 to RegularUser2.
+Enter a transaction:
 Successfully Logged Out!
 Enter a transaction:
