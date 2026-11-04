@@ -1,2 +1,17 @@
-06 RegularUser20   BS 000010.00
-00 AdminUser1      AA 002000.00
+Enter a transaction:
+Username:
+Successfully Logged In. Welcome, AdminUser1
+Available Games:
+Example Game 1             PublishingUser1 025.00
+Example Game 2             PublishingUser1 040.00
+Example Game 3             PublishingUser1 065.00
+Example Game 4             PublishingUser2 020.00
+Example Game 5             PublishingUser2 035.00
+Example Game 6             FullUser1       040.00
+Enter a transaction:
+Enter the amount of credits to add:
+Enter the username of the user to add credits to:
+ERROR: Failed to add credits. No accounts exist with that username.
+Enter a transaction:
+Successfully Logged Out!
+Enter a transaction:

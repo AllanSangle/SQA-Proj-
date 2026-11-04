@@ -1,5 +1,5 @@
 login
 RegularUser1
 addcredit
-10.00
+10.00d
 logout

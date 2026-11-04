@@ -3,4 +3,7 @@ AdminUser1
 addcredit
 1000.00
 RegularUser1
+addcredit
+5.00
+RegularUser1
 logout

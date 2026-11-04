@@ -13,5 +13,9 @@ Enter the amount of credits to add:
 Enter the username of the user to add credits to:
 ERROR: Failed to give credits to user. User balance is $999900.00 and would exceed the maximum credit limit of $999999.99.
 Enter a transaction:
+Enter the amount of credits to add:
+Enter the username of the user to add credits to:
+Successfully added $5.00 to RegularUser1.
+Enter a transaction:
 Successfully Logged Out!
 Enter a transaction:

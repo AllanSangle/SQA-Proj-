@@ -2,5 +2,5 @@ login
 AdminUser1
 addcredit
 10.00
-RegularUser1
+RegulrUser1
 logout
