@@ -1,5 +1,6 @@
 #include "SellStandardUser.h"
 
+//sets sell standard users permissions
 bool SellStandardUser::canBuy() const {
     return false;
 }

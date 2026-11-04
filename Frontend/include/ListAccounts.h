@@ -2,7 +2,8 @@
 #include "UserAccountFiles.h"
 #include "UserAccounts.h"
 #include <ostream>
- 
+
+// ListAccounts header class
 class ListAccounts {
 public:
     bool hasPermission();

@@ -1,5 +1,6 @@
 #pragma once
 #include "UserAccounts.h"
+//sets full standard users permissions
 class FullStandardUser : public UserAccounts {
 public:
     using UserAccounts::UserAccounts;

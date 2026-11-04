@@ -1,5 +1,6 @@
 #include "FullStandardUser.h"
 
+//sets full standard users permissions
 bool FullStandardUser::canBuy() const {
     return true;
 }

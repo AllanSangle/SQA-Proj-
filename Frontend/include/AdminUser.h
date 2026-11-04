@@ -1,5 +1,6 @@
 #pragma once
 #include "UserAccounts.h"
+//set admin privileges
 class AdminUser : public UserAccounts {
 public:
     using UserAccounts::UserAccounts;

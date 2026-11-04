@@ -5,6 +5,7 @@
 #include "AvailableGamesFile.h"
 #include "GameCollectionFile.h"
 #include "DailyTransactionFile.h"
+//delete user header class
 class DeleteUser {
 private:
     std::string username;

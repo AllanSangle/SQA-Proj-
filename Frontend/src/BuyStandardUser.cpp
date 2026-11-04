@@ -1,5 +1,6 @@
 #include "BuyStandardUser.h"
 
+//sets buy standard users permissions
 bool BuyStandardUser::canBuy() const {
     return true;
 }

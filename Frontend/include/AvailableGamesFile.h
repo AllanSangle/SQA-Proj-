@@ -2,7 +2,7 @@
 #include <cstdint>
 #include "Game.h"
 #include <vector>
-
+//Frontend/include/AvailableGamesFile.h
 class AvailableGamesFile {
     std::vector<Game> games;
 public:

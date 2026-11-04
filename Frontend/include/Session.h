@@ -2,6 +2,8 @@
 #include <cstdint> 
 #include "UserAccounts.h"
 
+// Session header class
+//system to keep track of the local variables created by user
 class Session {
 public:
     void start(UserAccounts User);

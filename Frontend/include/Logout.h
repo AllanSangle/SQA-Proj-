@@ -2,6 +2,8 @@
 #include <cstdint>
 #include "Session.h"
 #include "DailyTransactionFile.h"
+
+//  Logout header class
 class Logout {
     public:
         bool isLoggedIn(){return true;};

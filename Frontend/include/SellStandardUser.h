@@ -1,5 +1,7 @@
 #pragma once
 #include "UserAccounts.h"
+
+//sets sell standard users permissions
 class SellStandardUser : public UserAccounts {
 public:
     using UserAccounts::UserAccounts;

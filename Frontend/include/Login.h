@@ -1,6 +1,8 @@
 #pragma once
 #include "Session.h"
 #include "UserAccountFiles.h"
+
+// Login header class
 class Login {
 private:
     std::string username;

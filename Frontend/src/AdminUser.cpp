@@ -1,5 +1,5 @@
 #include "AdminUser.h"
-
+//sets admin users permissions
 bool AdminUser::canBuy() const {
     return true;
 }

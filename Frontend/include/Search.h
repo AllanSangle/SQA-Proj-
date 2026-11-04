@@ -4,5 +4,5 @@
 
 class Search {
 public:
-    void display(const std::string& query, std::ostream& out);
+    void display(const std::string& query, std::ostream& out); // search through OS sttram 
 };

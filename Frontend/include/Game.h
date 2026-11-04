@@ -3,6 +3,8 @@
 #include <string>
 #include <string>
 
+
+// Game header class
 class Game {
 private:
     std::string name;

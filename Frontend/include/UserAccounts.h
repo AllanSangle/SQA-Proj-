@@ -6,12 +6,15 @@
 #include <string>
 #include "OwnedGame.h"
 
+// UserAccounts header class
+//vector of account infomation stored in sesston 
 struct accounts {
     std::string username;
     int64_t credit;
 };
 
 
+//single user account class
 class UserAccounts {
 private:
     std::string username;

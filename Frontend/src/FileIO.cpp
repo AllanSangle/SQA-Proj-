@@ -1,5 +1,7 @@
 #include "Runtime.inc"
 
+// Frontend/src/FileIO.inc
+//helper classfor dailt transaction sets permission for read and write
 std::vector<std::string> readRecords(const std::string& path, std::size_t width) {
     std::ifstream input(path);
     require(bool(input), "Cannot open: " + path);

@@ -2,6 +2,8 @@
 #include "AvailableGamesFile.h"
 #include "Game.h"
 #include <ostream>
+
+// GameCatalogPage header class
 class GameCatalogPage {
     std::vector<Game> games;
 public:

@@ -7,6 +7,7 @@ const Credit MAX_CREDIT = 1000000;
 const Credit Max_SESSION_CREDIT = 1000000;
 const Credit MAX_PRICE  = 99999;
 
+//credit header class
 class Credit {
 public:
     Credit(int value) : value(value) {}

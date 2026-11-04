@@ -1,6 +1,7 @@
 #pragma once
 #include "OwnedGame.h"
 #include <vector>
+//Frontend/include/CurrentGamesFile.h
 class CurrentGamesFile {
 private:
     std::vector<OwnedGame> gameCollection;

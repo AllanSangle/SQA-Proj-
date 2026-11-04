@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 #include "UserAccounts.h"
+
+// UserAccountsFile header class
 class UserAccountsFile {
 private:
     std::vector<UserAccounts> Users;

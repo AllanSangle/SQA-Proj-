@@ -1,5 +1,6 @@
 #pragma once
 #include "CurrentGamesFile.h"
+//Frontend/include/GameLibrary.h
 class GameLibrary {
 private:
     std::string username;

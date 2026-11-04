@@ -5,6 +5,7 @@
 #include "AvailableGamesFile.h"
 #include "GameCollectionFile.h"
 #include "DailyTransactionFile.h"
+//create user header class
 class Create {
 private:
     std::string username;

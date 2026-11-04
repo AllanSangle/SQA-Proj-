@@ -5,6 +5,8 @@
 #include "AvailableGamesFile.h"
 #include "GameCollectionFile.h"
 #include "DailyTransactionFile.h"
+
+// Buy header class
 class Buy {
 private:
     int64_t price = 0;
