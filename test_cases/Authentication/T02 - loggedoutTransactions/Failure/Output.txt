@@ -1,5 +1,3 @@
 Enter a transaction:
-Enter the new account's username:
-Enter the new account's type:
-Successfully Created BS user User
+ERROR: Login using "login" transaction before performing any other transactions.
 Enter a transaction:

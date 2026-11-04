@@ -2,3 +2,6 @@ login
 AdminUser1
 login
 logout
+login
+RegularUser1
+logout
