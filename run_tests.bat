@@ -9,7 +9,13 @@ set "RESULTS=%ROOT%test_runs"
 
 @REM  creates the report file for the test summary, and adds a title and time of when the test run occured
 set "REPORT=%RESULTS%\test_summary.txt"
+set "PASSED_REPORT=%RESULTS%\passed_tests.txt"
+set "FAILED_REPORT=%RESULTS%\failed_tests.txt"
+set "FAILURE_PASSED_REPORT=%RESULTS%\passed_failure_tests.txt"
 if not exist "%RESULTS%" mkdir "%RESULTS%"
+> "%PASSED_REPORT%" echo Passed Tests - excluding Failure cases
+> "%FAILED_REPORT%" echo Failed Tests
+> "%FAILURE_PASSED_REPORT%" echo Passed Tests from Failure folders
 > "%REPORT%" echo Game Distribution System: Test Summary
 >> "%REPORT%" echo Time Of Test Run: %DATE% %TIME%
 >> "%REPORT%" echo.
@@ -35,6 +41,9 @@ if not exist "%RESULTS%\" mkdir "%RESULTS%"
 pushd "%FRONTEND%"
 
 rem keeps track of the number of fails for each type
+set /a PASSED_COUNT=0
+set /a FAILED_COUNT=0
+set /a FAILURE_PASSED_COUNT=0
 set /a TEST_COUNT=0
 set /a FAILED_RUN_COUNT=0
 set /a FAILED_TERMINAL_COUNT=0
@@ -55,7 +64,7 @@ for /d %%C in ("%TEST_CASES%\*") do (
                 rem saves the results, including the actual output of the program and the daily transaction file
                 set "RESULT_DIR=%RESULTS%\%%~nxC\%%~nxT\%%~nxV"
                 set "TERMINAL_OUTPUT=!RESULT_DIR!\actual_output.txt"
-                set "TRANSACTION_OUTPUT=!RESULT_DIR!\daily_transaction.atf"
+                set "TRANSACTION_OUTPUT=!RESULT_DIR!\daily_transaction.txt"
 
                 rem sets the output file for the expected output of a test, checking for both Output and output
                 set "EXPECTED_TERMINAL=%%~fV\Output.txt"
@@ -73,6 +82,8 @@ for /d %%C in ("%TEST_CASES%\*") do (
                 if exist "!TRANSACTION_OUTPUT!" del /q "!TRANSACTION_OUTPUT!"
 
                 set /a TEST_COUNT+=1
+                set "TEST_FAILED=0"
+                set "FAIL_REASONS="
 
                 echo.
                 echo [RUNNING TEST:] %%~nxC/%%~nxT/%%~nxV
@@ -90,6 +101,8 @@ for /d %%C in ("%TEST_CASES%\*") do (
                 if not "!TEST_EXIT!"=="0" (
                     echo [RUN ERROR] Program exited with code !TEST_EXIT!.
                     set /a FAILED_RUN_COUNT+=1
+                    set "TEST_FAILED=1"
+                    set "FAIL_REASONS=!FAIL_REASONS! Program exit code !TEST_EXIT!;"
                 )
 
                 rem Compare the actual terminal output from the test with the expected terminal output, update error counts, and log results
@@ -97,6 +110,8 @@ for /d %%C in ("%TEST_CASES%\*") do (
                     echo [EXPECTED OUTPUT FILE MISSING] "!EXPECTED_TERMINAL!"
                     set /a MISSING_FILE_COUNT+=1
                     set /a FAILED_TERMINAL_COUNT+=1
+                    set "TEST_FAILED=1"
+                    set "FAIL_REASONS=!FAIL_REASONS! Terminal output missing or different;"
                 ) else (
                     fc /b "!EXPECTED_TERMINAL!" "!TERMINAL_OUTPUT!" >nul 2>&1
                     if errorlevel 1 (
@@ -105,6 +120,8 @@ for /d %%C in ("%TEST_CASES%\*") do (
                         echo Expected: "!EXPECTED_TERMINAL!"
                         echo Actual: "!TERMINAL_OUTPUT!"
                         set /a FAILED_TERMINAL_COUNT+=1
+                    set "TEST_FAILED=1"
+                    set "FAIL_REASONS=!FAIL_REASONS! Terminal output missing or different;"
                     ) else (
                         echo [PASSED TERMINAL MATCH]
 			            >> "%REPORT%" echo [PASSED TERMINAL MATCH] %%~nxC/%%~nxT/%%~nxV
@@ -116,6 +133,8 @@ for /d %%C in ("%TEST_CASES%\*") do (
                     echo [DAILY TRANSACTION FILE MISSING] "!EXPECTED_TRANSACTION!"
                     set /a MISSING_FILE_COUNT+=1
                     set /a FAILED_TRANSACTION_COUNT+=1
+                    set "TEST_FAILED=1"
+                    set "FAIL_REASONS=!FAIL_REASONS! Transaction file missing or different;"
                 ) else (
                     fc /b "!EXPECTED_TRANSACTION!" "!TRANSACTION_OUTPUT!" >nul 2>&1
                     if errorlevel 1 (
@@ -124,10 +143,26 @@ for /d %%C in ("%TEST_CASES%\*") do (
                         echo Expected: "!EXPECTED_TRANSACTION!"
                         echo Actual: "!TRANSACTION_OUTPUT!"
                         set /a FAILED_TRANSACTION_COUNT+=1
+                    set "TEST_FAILED=1"
+                    set "FAIL_REASONS=!FAIL_REASONS! Transaction file missing or different;"
                     ) else (
                         echo [PASSED TRANSACTION MATCH]
 			            >> "%REPORT%" echo [PASSED TRANSACTION MATCH] %%~nxC/%%~nxT/%%~nxV
                     )
+                )
+                rem Classify each complete test exactly once.
+                if "!TEST_FAILED!"=="1" (
+                    set /a FAILED_COUNT+=1
+                    >> "%FAILED_REPORT%" echo [FAILED] %%~nxC/%%~nxT/%%~nxV -!FAIL_REASONS!
+                    >> "%REPORT%" echo [FAILED TEST] %%~nxC/%%~nxT/%%~nxV -!FAIL_REASONS!
+                ) else if /i "%%~nxV"=="Failure" (
+                    set /a FAILURE_PASSED_COUNT+=1
+                    >> "%FAILURE_PASSED_REPORT%" echo [PASSED] %%~nxC/%%~nxT/%%~nxV
+                    >> "%REPORT%" echo [PASSED FAILURE TEST] %%~nxC/%%~nxT/%%~nxV
+                ) else (
+                    set /a PASSED_COUNT+=1
+                    >> "%PASSED_REPORT%" echo [PASSED] %%~nxC/%%~nxT/%%~nxV
+                    >> "%REPORT%" echo [PASSED TEST] %%~nxC/%%~nxT/%%~nxV
                 )
             )
         )
@@ -146,11 +181,20 @@ echo Program Run Errors: !FAILED_RUN_COUNT!
 echo Terminal Output Inconsistencies: !FAILED_TERMINAL_COUNT!
 echo Transaction File Inconsistencies: !FAILED_TRANSACTION_COUNT!
 echo Missing Files: !MISSING_FILE_COUNT!
+echo Passed Tests excluding Failure cases: !PASSED_COUNT!
+echo Passed Failure Tests: !FAILURE_PASSED_COUNT!
+echo Failed Tests: !FAILED_COUNT!
 echo Actual results: "%RESULTS%"
 
 rem Saves summary to the report file
 >> "%REPORT%" echo.
 >> "%REPORT%" echo Tests Ran: !TEST_COUNT!
+>> "%REPORT%" echo Passed Tests excluding Failure cases: !PASSED_COUNT!
+>> "%REPORT%" echo Passed Failure Tests: !FAILURE_PASSED_COUNT!
+>> "%REPORT%" echo Failed Tests: !FAILED_COUNT!
+>> "%PASSED_REPORT%" echo Total: !PASSED_COUNT!
+>> "%FAILURE_PASSED_REPORT%" echo Total: !FAILURE_PASSED_COUNT!
+>> "%FAILED_REPORT%" echo Total: !FAILED_COUNT!
 >> "%REPORT%" echo Program Run Errors: !FAILED_RUN_COUNT!
 >> "%REPORT%" echo Terminal Output Inconsistencies: !FAILED_TERMINAL_COUNT!
 >> "%REPORT%" echo Transaction File Inconsistencies: !FAILED_TRANSACTION_COUNT!

@@ -1,6 +1,5 @@
 login
 AdminUser1
 buy
-Example Game 6
-PublishingUser6
+ExampleGame6
 logout

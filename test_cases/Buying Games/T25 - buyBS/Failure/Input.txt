@@ -2,5 +2,5 @@ login
 RegularUser1
 buy
 Example Game 1
-PublishingUser1
+PublishingUser20
 logout

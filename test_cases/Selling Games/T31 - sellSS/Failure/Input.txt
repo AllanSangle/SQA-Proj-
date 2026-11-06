@@ -1,4 +1,6 @@
 login
 PublishingUser1
 sell
+Example Game 7
+10.00d
 logout

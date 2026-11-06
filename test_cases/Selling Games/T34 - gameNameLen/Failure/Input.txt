@@ -2,5 +2,4 @@ login
 AdminUser1
 sell
 Example Long Name Game 12345
-10.00
 logout

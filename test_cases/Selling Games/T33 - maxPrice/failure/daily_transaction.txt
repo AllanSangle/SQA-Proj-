@@ -1,2 +1,1 @@
-03 Example Game 6            AdminUser1      1000.0
 00 AdminUser1      AA 002000.00

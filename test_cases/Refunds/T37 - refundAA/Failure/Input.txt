@@ -1,7 +1,5 @@
 login
 AdminUser1
 refund
-RegularUser1
-PublishingUser1
-065.00
+RegularUser20
 logout

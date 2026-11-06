@@ -1,7 +1,4 @@
 login
 PublishingUser1
 refund
-FullUser1
-PublishingUser1
-025.00
 logout
