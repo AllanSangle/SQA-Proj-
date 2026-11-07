@@ -6,10 +6,23 @@
         available_games.txt
         game_collection.txt
 
-    How to Run:
-    (Requires CMAKE to be installed)
-    In the Frontend folder (\Frontend) open run.bat. Once the build is complete begin entering transactions (login, logout, create, delete refund, sell, buy, addcredit, listaccounts)
+    How to run with one command line (Requires CMAKE to be installed):
+        Commands from root:
+        cd Frontend
+        ./build.bat
+        build/debug/frontend.exe current_user_accounts.txt available_games.txt game_collection.txt daily_transaction.txt
 
+        The final line above is one command line, and can be typed in terminal from the frontend folder to use the program
+
+    An alternative would be to use run.bat using ./run.bat
+
+    Alternative:
+        Open terminal in the frontend directory (/Frontend)
+        Run : g++ -Iinclude src/*.cpp -o frontend
+        Then run: ./frontend.exe current_user_accounts.txt available_games.txt game_collection.txt daily_transaction.txt
+        this could be run as one command line from the frontend folder (simpler command line)
+
+    begin entering transactions
     begin by entering login
 
     Here are the available usernames already created and can be logged into:
@@ -20,6 +33,10 @@
         PublishingUser1
         PublishingUser2
 
+    How to run tests:
+        From root, run run_tests.bat
+        Can be done in terminal using: ./run_tests.bat
+        A folder named "test_runs" will be made and contain each test case's actual outputs, as well as test summaries to see which test cases passed and failed.
 */
 
 #include "Runtime.inc"
@@ -49,13 +66,15 @@ int main(int argc, char** argv) {
     try {
         // Makes sure the three input filenames and transaction output filename were provided.
         if (argc != 5) {
-            std::cerr << "Usage: frontend accounts.txt games.txt collection.txt transactions.atf\n";
+            std::cerr << "Usage: ./frontend accounts.txt games.txt collection.txt transactions.atf\n";
             return 1;
         }
         // Sets the directory containing the stored account, catalog, and ownership files.
         const std::filesystem::path data = "../stored_data";
         // Uses the fourth argument as the daily transaction output file.
-        const std::filesystem::path output = argv[4];
+        const std::filesystem::path outputDir = "output";
+        std::filesystem::create_directories(outputDir);
+        const std::filesystem::path output = outputDir / std::filesystem::path(argv[4]).filename();
         // Creates the output folder when a folder was included in the filename.
         if (!output.parent_path().empty())
             std::filesystem::create_directories(output.parent_path());
