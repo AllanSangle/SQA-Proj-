@@ -1,26 +1,40 @@
-How to Run:
-main.ccp can be found in Frontend\src
+How to run with one command line (Requires CMAKE to be installed):
+Commands from root:
+cd Frontend
+./build.bat
+build/debug/frontend.exe current_user_accounts.txt available_games.txt game_collection.txt daily_transaction.txt
 
-Preferred/Intended Method: (Requires CMAKE to be installed)
-In the Frontend folder (\Frontend) open run.bat. Once the build is complete begin entering transactions (login, logout, create, delete refund, sell, buy, addcredit, listaccounts)
+The final line above is one command line, and can be typed in terminal from the frontend folder to use the program
 
-Alternatively:
-Open terminal in the frontend directory (\Frontend)
-Run ./run.bat
+An alternative would be to use run.bat using ./run.bat
+
+Alternative:
+Open terminal in the frontend directory (/Frontend)
+Run : g++ -Iinclude src/*.cpp -o frontend
+Then run: ./frontend.exe current_user_accounts.txt available_games.txt game_collection.txt daily_transaction.txt
+this could be run as one command line from the frontend folder (simpler command line)
+
 begin entering transactions
-
-Alternatively:
-Open terminal in the frontend directory (\Frontend)
-Run : g++ -Iinclude src/*.cpp -o main
-Then run: ./main or ./main.exe
-begin entering transactions
-
 begin by entering login
 
+Input Files:
+	current_user_accounts.txt
+	available_games.txt
+        game_collection.txt
+
 Here are the available usernames already created and can be logged into:
-    AdminUser1
-    FullUser1
-    RegularUser1
-    RegularUser2
-    PublishingUser1
-    PublishingUser2
+	AdminUser1
+	FullUser1
+	RegularUser1
+	RegularUser2
+	PublishingUser1
+	PublishingUser2
+
+
+How to run tests:
+From root, run run_tests.bat
+Can be done in terminal using: ./run_tests.bat
+
+A folder named "test_runs" will be made and contain each test cases actual outputs, as well as test summaries to see which test cases passed and failed.
+
+main.cpp can be found in Frontend/src

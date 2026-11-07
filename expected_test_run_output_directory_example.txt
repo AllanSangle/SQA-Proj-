@@ -1,35 +1,34 @@
 |--root/
-    ------root/test_cases
-          —---root/test_cases/Authentication/
-                 —-----root/test_cases/Authentication/T01/
-	     —------root/test_cases/Authentication/T01/success/
-     		—------root/test_cases/Authentication/T01/success/input.txt
-                 	—------root/test_cases/Authentication/T01/success/expected_output.txt
-                 	—------root/test_cases/Authentication/T01/success/daily_transaction.txt
-                   —------root/test_cases/Authentication/T01/failure/
-                 	—------root/test_cases/Authentication/T01/failure/input.txt
-                 	—------root/test_cases/Authentication/T01/failure/expected_output.txt
-                 	—------root/test_cases/Authentication/T01/failure/daily_transaction.txt
-    	    —------root/test_cases/Authentication/T01/Results/
-—-----root/test_cases/Authentication/T01/Results/failure/
-                 		—------root/test_cases/Authentication/T01/Results/failure/Actual_output.txt                 		        		 —------root/test_cases/Authentication/T01/Results/failure/Acutal_daily_transaction.txt
-—-----root/test_cases/Authentication/T01/Results/success/
-                 		—------root/test_cases/Authentication/T01/Results/success/Actual_output.txt
-                 		—------root/test_cases/Authentication/T01/Results/success/Acutal_daily_transaction.txt
-         —----root/test_cases/Buying Games/
-                 —-----root/test_cases/Buying Games/T22
-	     —------root/test_cases/Buying Games/T22/success
-     		—------root/test_cases/Buying Games/T22/success/input.txt
-                 	—------root/test_cases/Buying Games/T22/success/expected_output.txt
-                 	—------root/test_cases/Buying Games/T22/success/daily_transaction.txt
-                 —------root/test_cases/Buying Games/T22/failure
-                 	—------root/test_cases/Buying Games/T22/failure/input.txt
-                 	—------root/test_cases/Buying Games/T22/failure/expected_output.txt
-                 	—------root/test_cases/Buying Games/T22/failure/daily_transaction.txt
-    	    —------root/test_cases/Buying Games/T22/Results 
-—-----root/test_cases/Buying Games/T22/Results/failure
-                 		—------root/test_cases/Buying Games/T22/Results/failure/Actual_output.txt
-                 	—------root/test_cases/Buying Games/T22/Results/failure/Acutal_daily_transaction.txt
-—-----root/test_cases/Buying Games/T22/Results/success
-                 		—------root/test_cases/Buying Games/T22/Results/success/Actual_output.txt
-                 		—------root/test_cases/Buying Games/T22/Results/success/Acutal_daily_transaction.txt
+ --root/Frontend/
+    ---run_tests.bat
+    ---root/test_runs/<test_category>/
+        ---root/test_runs/<test_category>/<test_name>/
+	    ---root/test_runs/<test_category>/<test_name>/Success
+	       ---root/test_runs/<test_category>/<test_name>/Success/actual_output.txt
+	       ---root/test_runs/<test_category>/<test_name>/Success/daily_transaction.txt
+	    ---root/test_runs/<test_category>/<test_name>/Failure
+	       ---root/test_runs/<test_category>/<test_name>/Failure/actual_output.txt
+	       ---root/test_runs/<test_category>/<test_name>/Failure/daily_transaction.txt
+    ---root/Frontend/src/
+  	---root/Frontend/src/main.cpp
+	---root/Frontend/src/<class>.cpp
+	---root/Frontend/src/Runtime.inc
+    ---root/Frontend/include/
+	---root/Frontend/include/<class>.h
+    ---root/Frontend/output/
+       ---root/Frontend/output/dailytransactions.txt
+ —root/stored_data/
+     —--root/stored_data/available_games.txt
+     —--root/stored_data/current_user_accounts.txt
+     —--root/stored_data/game_collection.txt
+—root/test_cases/
+    —root/test_cases/<test_category>/
+           —-root/test_cases/<test_category>/<test_name>/
+               —-root/test_cases/<test_category>/<test_name>/success/
+                   —-root/test_cases/<test_category>/<test_name>/success/input.txt
+                   —-root/test_cases/<test_category>/<test_name>/success/expected_output.txt
+                   —-root/test_cases/<test_category>/<test_name>/success/daily_transaction.txt
+               —-root/test_cases/<test_category>/<test_name>/failure/
+                   —-root/test_cases/<test_category>/<test_name>/failure/input.txt
+                   —-root/test_cases/<test_category>/<test_name>/failure/expected_output.txt
+                   —-root/test_cases/<test_category>/<test_name>/failure/daily_transaction.txt

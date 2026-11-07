@@ -1,5 +1,8 @@
 |--root/
+ --root/run_tests.bat
  --root/Frontend/
+    ---root/Frontend/build.bat
+    ---root/Frontend/run.bat
     ---root/Frontend/src/
   	---root/Frontend/src/main.cpp
 	---root/Frontend/src/<class>.cpp
