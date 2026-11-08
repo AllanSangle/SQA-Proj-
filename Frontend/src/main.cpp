@@ -73,8 +73,7 @@ int main(int argc, char** argv) {
         const std::filesystem::path data = "../stored_data";
         // Uses the fourth argument as the daily transaction output file.
         const std::filesystem::path outputDir = "output";
-        std::filesystem::create_directories(outputDir);
-        const std::filesystem::path output = outputDir / std::filesystem::path(argv[4]).filename();
+        const std::filesystem::path output = argv[4];
         // Creates the output folder when a folder was included in the filename.
         if (!output.parent_path().empty())
             std::filesystem::create_directories(output.parent_path());
