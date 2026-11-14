@@ -1,0 +1,59 @@
+Passed Tests from Failure folders
+[PASSED] Account Creation/T05 - maxUsernameChar/Failure
+[PASSED] Account Creation/T06 - uniqueUsername/Failure
+[PASSED] Account Creation/T07 - createFS/Failure
+[PASSED] Account Creation/T08 - createBS/Failure
+[PASSED] Account Creation/T09 - createSS/Failure
+[PASSED] Account Creation/T10 -adminCreateAA/Failure
+[PASSED] Account Creation/T11 - adminCreateBS/Failure
+[PASSED] Account Creation/T12 - adminCreateFS/Failure
+[PASSED] Account Creation/T13 - adminCreateSS/Failure
+[PASSED] Account Creation/T14 - createNonExistingType/Failure
+[PASSED] Account Deletion/T15 - deletePermsAA/Failure
+[PASSED] Account Deletion/T16 -deletePermsFS/Failure
+[PASSED] Account Deletion/T17 - deletePermsBS/Failure
+[PASSED] Account Deletion/T18 - deletePermsSS/Failure
+[PASSED] Account Deletion/T19 - deleteCurrUser/Failure
+[PASSED] Account Deletion/T20 - deleteExistingUser/Failure
+[PASSED] Account Deletion/T21 - transactionsOnDeletedUser/Failure
+[PASSED] Add Credit/T46 - creditAA/Failure
+[PASSED] Add Credit/T47 - creditBS/Failure
+[PASSED] Add Credit/T48 - creditFS/Failure
+[PASSED] Add Credit/T49 - creditSS/Failure
+[PASSED] Add Credit/T50 - exisitingAccountCredit/Failure
+[PASSED] Add Credit/T51 - maxAdd/Failure
+[PASSED] Add Credit/T52 - maxCred/Failure
+[PASSED] Authentication/T01 - loginExistingAccount/Failure
+[PASSED] Authentication/T02 - loggedoutTransactions/Failure
+[PASSED] Authentication/T03 - loggedIn/Failure
+[PASSED] Authentication/T04 - logoutWhileLoggedIn/Failure
+[PASSED] Buying Games/T22 - buyExistingGame/Failure
+[PASSED] Buying Games/T23 - buyAA/Failure
+[PASSED] Buying Games/T24 - buyFS/Failure
+[PASSED] Buying Games/T25 - buyBS/Failure
+[PASSED] Buying Games/T26 - buySS/Failure
+[PASSED] Buying Games/T27 - withinCreditLimit/Failure
+[PASSED] Buying Games/T28 - alreadyOwned/Failure
+[PASSED] Listing Accounts/T53 - listAccounts/Failure
+[PASSED] Listing Accounts/T54 - listAccountsPerms/Failure
+[PASSED] Refunds/T37 - refundAA/Failure
+[PASSED] Refunds/T38 - refundSS/Failure
+[PASSED] Refunds/T39 - refundFS/Failure
+[PASSED] Refunds/T40 - refundBS/Failure
+[PASSED] Refunds/T41 - checkRefundCred/Failure
+[PASSED] Refunds/T42 - checkMaxCredRefund/Failure
+[PASSED] Refunds/T43 - checkBuyerRefundAmt/Failure
+[PASSED] Refunds/T44 - refundNoOwn/Failure
+[PASSED] Refunds/T45 - existingAccountRefund/Failure
+[PASSED] Search/T55 - searchResults/Failure
+[PASSED] Search/T56 - searchNonAdmin/Failure
+[PASSED] Search/T57 - searchAdmin/Failure
+[PASSED] Selling Games/T29 - sellAA/Failure
+[PASSED] Selling Games/T30 - sellFS/Failure
+[PASSED] Selling Games/T31 - sellSS/Failure
+[PASSED] Selling Games/T32 - sellBS/Failure
+[PASSED] Selling Games/T33 - maxPrice/failure
+[PASSED] Selling Games/T34 - gameNameLen/Failure
+[PASSED] Selling Games/T35 - uniqueGameName/failure
+[PASSED] Selling Games/T36 - newGameTransaction/Failure
+Total: 57

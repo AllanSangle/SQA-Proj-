@@ -1,0 +1,3 @@
+Enter a transaction:
+ERROR: You can't logout without being logged in
+Enter a transaction:

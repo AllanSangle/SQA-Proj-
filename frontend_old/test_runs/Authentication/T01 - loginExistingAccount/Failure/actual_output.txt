@@ -1,0 +1,4 @@
+Enter a transaction:
+Username:
+ERROR: Failed to login. A user with that username does not exist
+Enter a transaction:

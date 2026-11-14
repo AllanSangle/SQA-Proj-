@@ -1,0 +1,354 @@
+Game Distribution System: Test Summary
+Time Of Test Run: 2026-11-09 20:09:58.69
+
+[PASSED TERMINAL MATCH] Account Creation/T05 - maxUsernameChar/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T05 - maxUsernameChar/Failure
+[PASSED FAILURE TEST] Account Creation/T05 - maxUsernameChar/Failure
+[PASSED TERMINAL MATCH] Account Creation/T05 - maxUsernameChar/Success
+[PASSED TRANSACTION MATCH] Account Creation/T05 - maxUsernameChar/Success
+[PASSED TEST] Account Creation/T05 - maxUsernameChar/Success
+[PASSED TERMINAL MATCH] Account Creation/T06 - uniqueUsername/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T06 - uniqueUsername/Failure
+[PASSED FAILURE TEST] Account Creation/T06 - uniqueUsername/Failure
+[PASSED TERMINAL MATCH] Account Creation/T06 - uniqueUsername/Success
+[PASSED TRANSACTION MATCH] Account Creation/T06 - uniqueUsername/Success
+[PASSED TEST] Account Creation/T06 - uniqueUsername/Success
+[PASSED TERMINAL MATCH] Account Creation/T07 - createFS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T07 - createFS/Failure
+[PASSED FAILURE TEST] Account Creation/T07 - createFS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T07 - createFS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T07 - createFS/Success
+[PASSED TEST] Account Creation/T07 - createFS/Success
+[PASSED TERMINAL MATCH] Account Creation/T08 - createBS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T08 - createBS/Failure
+[PASSED FAILURE TEST] Account Creation/T08 - createBS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T08 - createBS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T08 - createBS/Success
+[PASSED TEST] Account Creation/T08 - createBS/Success
+[PASSED TERMINAL MATCH] Account Creation/T09 - createSS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T09 - createSS/Failure
+[PASSED FAILURE TEST] Account Creation/T09 - createSS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T09 - createSS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T09 - createSS/Success
+[PASSED TEST] Account Creation/T09 - createSS/Success
+[PASSED TERMINAL MATCH] Account Creation/T10 -adminCreateAA/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T10 -adminCreateAA/Failure
+[PASSED FAILURE TEST] Account Creation/T10 -adminCreateAA/Failure
+[PASSED TERMINAL MATCH] Account Creation/T10 -adminCreateAA/Success
+[PASSED TRANSACTION MATCH] Account Creation/T10 -adminCreateAA/Success
+[PASSED TEST] Account Creation/T10 -adminCreateAA/Success
+[PASSED TERMINAL MATCH] Account Creation/T11 - adminCreateBS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T11 - adminCreateBS/Failure
+[PASSED FAILURE TEST] Account Creation/T11 - adminCreateBS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T11 - adminCreateBS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T11 - adminCreateBS/Success
+[PASSED TEST] Account Creation/T11 - adminCreateBS/Success
+[PASSED TERMINAL MATCH] Account Creation/T12 - adminCreateFS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T12 - adminCreateFS/Failure
+[PASSED FAILURE TEST] Account Creation/T12 - adminCreateFS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T12 - adminCreateFS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T12 - adminCreateFS/Success
+[PASSED TEST] Account Creation/T12 - adminCreateFS/Success
+[PASSED TERMINAL MATCH] Account Creation/T13 - adminCreateSS/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T13 - adminCreateSS/Failure
+[PASSED FAILURE TEST] Account Creation/T13 - adminCreateSS/Failure
+[PASSED TERMINAL MATCH] Account Creation/T13 - adminCreateSS/Success
+[PASSED TRANSACTION MATCH] Account Creation/T13 - adminCreateSS/Success
+[PASSED TEST] Account Creation/T13 - adminCreateSS/Success
+[PASSED TERMINAL MATCH] Account Creation/T14 - createNonExistingType/Failure
+[PASSED TRANSACTION MATCH] Account Creation/T14 - createNonExistingType/Failure
+[PASSED FAILURE TEST] Account Creation/T14 - createNonExistingType/Failure
+[PASSED TERMINAL MATCH] Account Creation/T14 - createNonExistingType/Success
+[PASSED TRANSACTION MATCH] Account Creation/T14 - createNonExistingType/Success
+[PASSED TEST] Account Creation/T14 - createNonExistingType/Success
+[PASSED TERMINAL MATCH] Account Deletion/T15 - deletePermsAA/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T15 - deletePermsAA/Failure
+[PASSED FAILURE TEST] Account Deletion/T15 - deletePermsAA/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T15 - deletePermsAA/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T15 - deletePermsAA/Success
+[PASSED TEST] Account Deletion/T15 - deletePermsAA/Success
+[PASSED TERMINAL MATCH] Account Deletion/T16 -deletePermsFS/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T16 -deletePermsFS/Failure
+[PASSED FAILURE TEST] Account Deletion/T16 -deletePermsFS/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T16 -deletePermsFS/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T16 -deletePermsFS/Success
+[PASSED TEST] Account Deletion/T16 -deletePermsFS/Success
+[PASSED TERMINAL MATCH] Account Deletion/T17 - deletePermsBS/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T17 - deletePermsBS/Failure
+[PASSED FAILURE TEST] Account Deletion/T17 - deletePermsBS/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T17 - deletePermsBS/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T17 - deletePermsBS/Success
+[PASSED TEST] Account Deletion/T17 - deletePermsBS/Success
+[PASSED TERMINAL MATCH] Account Deletion/T18 - deletePermsSS/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T18 - deletePermsSS/Failure
+[PASSED FAILURE TEST] Account Deletion/T18 - deletePermsSS/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T18 - deletePermsSS/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T18 - deletePermsSS/Success
+[PASSED TEST] Account Deletion/T18 - deletePermsSS/Success
+[PASSED TERMINAL MATCH] Account Deletion/T19 - deleteCurrUser/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T19 - deleteCurrUser/Failure
+[PASSED FAILURE TEST] Account Deletion/T19 - deleteCurrUser/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T19 - deleteCurrUser/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T19 - deleteCurrUser/Success
+[PASSED TEST] Account Deletion/T19 - deleteCurrUser/Success
+[PASSED TERMINAL MATCH] Account Deletion/T20 - deleteExistingUser/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T20 - deleteExistingUser/Failure
+[PASSED FAILURE TEST] Account Deletion/T20 - deleteExistingUser/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T20 - deleteExistingUser/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T20 - deleteExistingUser/Success
+[PASSED TEST] Account Deletion/T20 - deleteExistingUser/Success
+[PASSED TERMINAL MATCH] Account Deletion/T21 - transactionsOnDeletedUser/Failure
+[PASSED TRANSACTION MATCH] Account Deletion/T21 - transactionsOnDeletedUser/Failure
+[PASSED FAILURE TEST] Account Deletion/T21 - transactionsOnDeletedUser/Failure
+[PASSED TERMINAL MATCH] Account Deletion/T21 - transactionsOnDeletedUser/Success
+[PASSED TRANSACTION MATCH] Account Deletion/T21 - transactionsOnDeletedUser/Success
+[PASSED TEST] Account Deletion/T21 - transactionsOnDeletedUser/Success
+[PASSED TERMINAL MATCH] Add Credit/T46 - creditAA/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T46 - creditAA/Failure
+[PASSED FAILURE TEST] Add Credit/T46 - creditAA/Failure
+[PASSED TERMINAL MATCH] Add Credit/T46 - creditAA/Success
+[PASSED TRANSACTION MATCH] Add Credit/T46 - creditAA/Success
+[PASSED TEST] Add Credit/T46 - creditAA/Success
+[PASSED TERMINAL MATCH] Add Credit/T47 - creditBS/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T47 - creditBS/Failure
+[PASSED FAILURE TEST] Add Credit/T47 - creditBS/Failure
+[PASSED TERMINAL MATCH] Add Credit/T47 - creditBS/Success
+[PASSED TRANSACTION MATCH] Add Credit/T47 - creditBS/Success
+[PASSED TEST] Add Credit/T47 - creditBS/Success
+[PASSED TERMINAL MATCH] Add Credit/T48 - creditFS/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T48 - creditFS/Failure
+[PASSED FAILURE TEST] Add Credit/T48 - creditFS/Failure
+[PASSED TERMINAL MATCH] Add Credit/T48 - creditFS/Success
+[PASSED TRANSACTION MATCH] Add Credit/T48 - creditFS/Success
+[PASSED TEST] Add Credit/T48 - creditFS/Success
+[PASSED TERMINAL MATCH] Add Credit/T49 - creditSS/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T49 - creditSS/Failure
+[PASSED FAILURE TEST] Add Credit/T49 - creditSS/Failure
+[PASSED TERMINAL MATCH] Add Credit/T49 - creditSS/Success
+[PASSED TRANSACTION MATCH] Add Credit/T49 - creditSS/Success
+[PASSED TEST] Add Credit/T49 - creditSS/Success
+[PASSED TERMINAL MATCH] Add Credit/T50 - exisitingAccountCredit/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T50 - exisitingAccountCredit/Failure
+[PASSED FAILURE TEST] Add Credit/T50 - exisitingAccountCredit/Failure
+[PASSED TERMINAL MATCH] Add Credit/T50 - exisitingAccountCredit/Success
+[PASSED TRANSACTION MATCH] Add Credit/T50 - exisitingAccountCredit/Success
+[PASSED TEST] Add Credit/T50 - exisitingAccountCredit/Success
+[PASSED TERMINAL MATCH] Add Credit/T51 - maxAdd/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T51 - maxAdd/Failure
+[PASSED FAILURE TEST] Add Credit/T51 - maxAdd/Failure
+[PASSED TERMINAL MATCH] Add Credit/T51 - maxAdd/Success
+[PASSED TRANSACTION MATCH] Add Credit/T51 - maxAdd/Success
+[PASSED TEST] Add Credit/T51 - maxAdd/Success
+[PASSED TERMINAL MATCH] Add Credit/T52 - maxCred/Failure
+[PASSED TRANSACTION MATCH] Add Credit/T52 - maxCred/Failure
+[PASSED FAILURE TEST] Add Credit/T52 - maxCred/Failure
+[PASSED TERMINAL MATCH] Add Credit/T52 - maxCred/Success
+[PASSED TRANSACTION MATCH] Add Credit/T52 - maxCred/Success
+[PASSED TEST] Add Credit/T52 - maxCred/Success
+[PASSED TERMINAL MATCH] Authentication/T01 - loginExistingAccount/Failure
+[PASSED TRANSACTION MATCH] Authentication/T01 - loginExistingAccount/Failure
+[PASSED FAILURE TEST] Authentication/T01 - loginExistingAccount/Failure
+[PASSED TERMINAL MATCH] Authentication/T01 - loginExistingAccount/Success
+[PASSED TRANSACTION MATCH] Authentication/T01 - loginExistingAccount/Success
+[PASSED TEST] Authentication/T01 - loginExistingAccount/Success
+[PASSED TERMINAL MATCH] Authentication/T02 - loggedoutTransactions/Failure
+[PASSED TRANSACTION MATCH] Authentication/T02 - loggedoutTransactions/Failure
+[PASSED FAILURE TEST] Authentication/T02 - loggedoutTransactions/Failure
+[PASSED TERMINAL MATCH] Authentication/T02 - loggedoutTransactions/Success
+[PASSED TRANSACTION MATCH] Authentication/T02 - loggedoutTransactions/Success
+[PASSED TEST] Authentication/T02 - loggedoutTransactions/Success
+[PASSED TERMINAL MATCH] Authentication/T03 - loggedIn/Failure
+[PASSED TRANSACTION MATCH] Authentication/T03 - loggedIn/Failure
+[PASSED FAILURE TEST] Authentication/T03 - loggedIn/Failure
+[PASSED TERMINAL MATCH] Authentication/T03 - loggedIn/Success
+[PASSED TRANSACTION MATCH] Authentication/T03 - loggedIn/Success
+[PASSED TEST] Authentication/T03 - loggedIn/Success
+[PASSED TERMINAL MATCH] Authentication/T04 - logoutWhileLoggedIn/Failure
+[PASSED TRANSACTION MATCH] Authentication/T04 - logoutWhileLoggedIn/Failure
+[PASSED FAILURE TEST] Authentication/T04 - logoutWhileLoggedIn/Failure
+[PASSED TERMINAL MATCH] Authentication/T04 - logoutWhileLoggedIn/Success
+[PASSED TRANSACTION MATCH] Authentication/T04 - logoutWhileLoggedIn/Success
+[PASSED TEST] Authentication/T04 - logoutWhileLoggedIn/Success
+[PASSED TERMINAL MATCH] Buying Games/T22 - buyExistingGame/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T22 - buyExistingGame/Failure
+[PASSED FAILURE TEST] Buying Games/T22 - buyExistingGame/Failure
+[PASSED TERMINAL MATCH] Buying Games/T22 - buyExistingGame/Success
+[PASSED TRANSACTION MATCH] Buying Games/T22 - buyExistingGame/Success
+[PASSED TEST] Buying Games/T22 - buyExistingGame/Success
+[PASSED TERMINAL MATCH] Buying Games/T23 - buyAA/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T23 - buyAA/Failure
+[PASSED FAILURE TEST] Buying Games/T23 - buyAA/Failure
+[PASSED TERMINAL MATCH] Buying Games/T23 - buyAA/Success
+[PASSED TRANSACTION MATCH] Buying Games/T23 - buyAA/Success
+[PASSED TEST] Buying Games/T23 - buyAA/Success
+[PASSED TERMINAL MATCH] Buying Games/T24 - buyFS/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T24 - buyFS/Failure
+[PASSED FAILURE TEST] Buying Games/T24 - buyFS/Failure
+[PASSED TERMINAL MATCH] Buying Games/T24 - buyFS/Success
+[PASSED TRANSACTION MATCH] Buying Games/T24 - buyFS/Success
+[PASSED TEST] Buying Games/T24 - buyFS/Success
+[PASSED TERMINAL MATCH] Buying Games/T25 - buyBS/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T25 - buyBS/Failure
+[PASSED FAILURE TEST] Buying Games/T25 - buyBS/Failure
+[PASSED TERMINAL MATCH] Buying Games/T25 - buyBS/Success
+[PASSED TRANSACTION MATCH] Buying Games/T25 - buyBS/Success
+[PASSED TEST] Buying Games/T25 - buyBS/Success
+[PASSED TERMINAL MATCH] Buying Games/T26 - buySS/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T26 - buySS/Failure
+[PASSED FAILURE TEST] Buying Games/T26 - buySS/Failure
+[PASSED TERMINAL MATCH] Buying Games/T26 - buySS/Success
+[PASSED TRANSACTION MATCH] Buying Games/T26 - buySS/Success
+[PASSED TEST] Buying Games/T26 - buySS/Success
+[PASSED TERMINAL MATCH] Buying Games/T27 - withinCreditLimit/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T27 - withinCreditLimit/Failure
+[PASSED FAILURE TEST] Buying Games/T27 - withinCreditLimit/Failure
+[PASSED TERMINAL MATCH] Buying Games/T27 - withinCreditLimit/Success
+[PASSED TRANSACTION MATCH] Buying Games/T27 - withinCreditLimit/Success
+[PASSED TEST] Buying Games/T27 - withinCreditLimit/Success
+[PASSED TERMINAL MATCH] Buying Games/T28 - alreadyOwned/Failure
+[PASSED TRANSACTION MATCH] Buying Games/T28 - alreadyOwned/Failure
+[PASSED FAILURE TEST] Buying Games/T28 - alreadyOwned/Failure
+[PASSED TERMINAL MATCH] Buying Games/T28 - alreadyOwned/Success
+[PASSED TRANSACTION MATCH] Buying Games/T28 - alreadyOwned/Success
+[PASSED TEST] Buying Games/T28 - alreadyOwned/Success
+[PASSED TERMINAL MATCH] Listing Accounts/T53 - listAccounts/Failure
+[PASSED TRANSACTION MATCH] Listing Accounts/T53 - listAccounts/Failure
+[PASSED FAILURE TEST] Listing Accounts/T53 - listAccounts/Failure
+[PASSED TERMINAL MATCH] Listing Accounts/T53 - listAccounts/Success
+[PASSED TRANSACTION MATCH] Listing Accounts/T53 - listAccounts/Success
+[PASSED TEST] Listing Accounts/T53 - listAccounts/Success
+[PASSED TERMINAL MATCH] Listing Accounts/T54 - listAccountsPerms/Failure
+[PASSED TRANSACTION MATCH] Listing Accounts/T54 - listAccountsPerms/Failure
+[PASSED FAILURE TEST] Listing Accounts/T54 - listAccountsPerms/Failure
+[PASSED TERMINAL MATCH] Listing Accounts/T54 - listAccountsPerms/Success
+[PASSED TRANSACTION MATCH] Listing Accounts/T54 - listAccountsPerms/Success
+[PASSED TEST] Listing Accounts/T54 - listAccountsPerms/Success
+[PASSED TERMINAL MATCH] Refunds/T37 - refundAA/Failure
+[PASSED TRANSACTION MATCH] Refunds/T37 - refundAA/Failure
+[PASSED FAILURE TEST] Refunds/T37 - refundAA/Failure
+[PASSED TERMINAL MATCH] Refunds/T37 - refundAA/Success
+[PASSED TRANSACTION MATCH] Refunds/T37 - refundAA/Success
+[PASSED TEST] Refunds/T37 - refundAA/Success
+[PASSED TERMINAL MATCH] Refunds/T38 - refundSS/Failure
+[PASSED TRANSACTION MATCH] Refunds/T38 - refundSS/Failure
+[PASSED FAILURE TEST] Refunds/T38 - refundSS/Failure
+[PASSED TERMINAL MATCH] Refunds/T38 - refundSS/Success
+[PASSED TRANSACTION MATCH] Refunds/T38 - refundSS/Success
+[PASSED TEST] Refunds/T38 - refundSS/Success
+[PASSED TERMINAL MATCH] Refunds/T39 - refundFS/Failure
+[PASSED TRANSACTION MATCH] Refunds/T39 - refundFS/Failure
+[PASSED FAILURE TEST] Refunds/T39 - refundFS/Failure
+[PASSED TERMINAL MATCH] Refunds/T39 - refundFS/Success
+[PASSED TRANSACTION MATCH] Refunds/T39 - refundFS/Success
+[PASSED TEST] Refunds/T39 - refundFS/Success
+[PASSED TERMINAL MATCH] Refunds/T40 - refundBS/Failure
+[PASSED TRANSACTION MATCH] Refunds/T40 - refundBS/Failure
+[PASSED FAILURE TEST] Refunds/T40 - refundBS/Failure
+[PASSED TERMINAL MATCH] Refunds/T40 - refundBS/Success
+[PASSED TRANSACTION MATCH] Refunds/T40 - refundBS/Success
+[PASSED TEST] Refunds/T40 - refundBS/Success
+[PASSED TERMINAL MATCH] Refunds/T41 - checkRefundCred/Failure
+[PASSED TRANSACTION MATCH] Refunds/T41 - checkRefundCred/Failure
+[PASSED FAILURE TEST] Refunds/T41 - checkRefundCred/Failure
+[PASSED TERMINAL MATCH] Refunds/T41 - checkRefundCred/Success
+[PASSED TRANSACTION MATCH] Refunds/T41 - checkRefundCred/Success
+[PASSED TEST] Refunds/T41 - checkRefundCred/Success
+[PASSED TERMINAL MATCH] Refunds/T42 - checkMaxCredRefund/Failure
+[PASSED TRANSACTION MATCH] Refunds/T42 - checkMaxCredRefund/Failure
+[PASSED FAILURE TEST] Refunds/T42 - checkMaxCredRefund/Failure
+[PASSED TERMINAL MATCH] Refunds/T42 - checkMaxCredRefund/Success
+[PASSED TRANSACTION MATCH] Refunds/T42 - checkMaxCredRefund/Success
+[PASSED TEST] Refunds/T42 - checkMaxCredRefund/Success
+[PASSED TERMINAL MATCH] Refunds/T43 - checkBuyerRefundAmt/Failure
+[PASSED TRANSACTION MATCH] Refunds/T43 - checkBuyerRefundAmt/Failure
+[PASSED FAILURE TEST] Refunds/T43 - checkBuyerRefundAmt/Failure
+[PASSED TERMINAL MATCH] Refunds/T43 - checkBuyerRefundAmt/Success
+[PASSED TRANSACTION MATCH] Refunds/T43 - checkBuyerRefundAmt/Success
+[PASSED TEST] Refunds/T43 - checkBuyerRefundAmt/Success
+[PASSED TERMINAL MATCH] Refunds/T44 - refundNoOwn/Failure
+[PASSED TRANSACTION MATCH] Refunds/T44 - refundNoOwn/Failure
+[PASSED FAILURE TEST] Refunds/T44 - refundNoOwn/Failure
+[PASSED TERMINAL MATCH] Refunds/T44 - refundNoOwn/Success
+[PASSED TRANSACTION MATCH] Refunds/T44 - refundNoOwn/Success
+[PASSED TEST] Refunds/T44 - refundNoOwn/Success
+[PASSED TERMINAL MATCH] Refunds/T45 - existingAccountRefund/Failure
+[PASSED TRANSACTION MATCH] Refunds/T45 - existingAccountRefund/Failure
+[PASSED FAILURE TEST] Refunds/T45 - existingAccountRefund/Failure
+[PASSED TERMINAL MATCH] Refunds/T45 - existingAccountRefund/Success
+[PASSED TRANSACTION MATCH] Refunds/T45 - existingAccountRefund/Success
+[PASSED TEST] Refunds/T45 - existingAccountRefund/Success
+[PASSED TERMINAL MATCH] Search/T55 - searchResults/Failure
+[PASSED TRANSACTION MATCH] Search/T55 - searchResults/Failure
+[PASSED FAILURE TEST] Search/T55 - searchResults/Failure
+[PASSED TERMINAL MATCH] Search/T55 - searchResults/Success
+[PASSED TRANSACTION MATCH] Search/T55 - searchResults/Success
+[PASSED TEST] Search/T55 - searchResults/Success
+[PASSED TERMINAL MATCH] Search/T56 - searchNonAdmin/Failure
+[PASSED TRANSACTION MATCH] Search/T56 - searchNonAdmin/Failure
+[PASSED FAILURE TEST] Search/T56 - searchNonAdmin/Failure
+[PASSED TERMINAL MATCH] Search/T56 - searchNonAdmin/Success
+[PASSED TRANSACTION MATCH] Search/T56 - searchNonAdmin/Success
+[PASSED TEST] Search/T56 - searchNonAdmin/Success
+[PASSED TERMINAL MATCH] Search/T57 - searchAdmin/Failure
+[PASSED TRANSACTION MATCH] Search/T57 - searchAdmin/Failure
+[PASSED FAILURE TEST] Search/T57 - searchAdmin/Failure
+[PASSED TERMINAL MATCH] Search/T57 - searchAdmin/Success
+[PASSED TRANSACTION MATCH] Search/T57 - searchAdmin/Success
+[PASSED TEST] Search/T57 - searchAdmin/Success
+[PASSED TERMINAL MATCH] Selling Games/T29 - sellAA/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T29 - sellAA/Failure
+[PASSED FAILURE TEST] Selling Games/T29 - sellAA/Failure
+[PASSED TERMINAL MATCH] Selling Games/T29 - sellAA/Success
+[PASSED TRANSACTION MATCH] Selling Games/T29 - sellAA/Success
+[PASSED TEST] Selling Games/T29 - sellAA/Success
+[PASSED TERMINAL MATCH] Selling Games/T30 - sellFS/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T30 - sellFS/Failure
+[PASSED FAILURE TEST] Selling Games/T30 - sellFS/Failure
+[PASSED TERMINAL MATCH] Selling Games/T30 - sellFS/Success
+[PASSED TRANSACTION MATCH] Selling Games/T30 - sellFS/Success
+[PASSED TEST] Selling Games/T30 - sellFS/Success
+[PASSED TERMINAL MATCH] Selling Games/T31 - sellSS/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T31 - sellSS/Failure
+[PASSED FAILURE TEST] Selling Games/T31 - sellSS/Failure
+[PASSED TERMINAL MATCH] Selling Games/T31 - sellSS/Success
+[PASSED TRANSACTION MATCH] Selling Games/T31 - sellSS/Success
+[PASSED TEST] Selling Games/T31 - sellSS/Success
+[PASSED TERMINAL MATCH] Selling Games/T32 - sellBS/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T32 - sellBS/Failure
+[PASSED FAILURE TEST] Selling Games/T32 - sellBS/Failure
+[PASSED TERMINAL MATCH] Selling Games/T32 - sellBS/Success
+[PASSED TRANSACTION MATCH] Selling Games/T32 - sellBS/Success
+[PASSED TEST] Selling Games/T32 - sellBS/Success
+[PASSED TERMINAL MATCH] Selling Games/T33 - maxPrice/failure
+[PASSED TRANSACTION MATCH] Selling Games/T33 - maxPrice/failure
+[PASSED FAILURE TEST] Selling Games/T33 - maxPrice/failure
+[PASSED TERMINAL MATCH] Selling Games/T33 - maxPrice/success
+[PASSED TRANSACTION MATCH] Selling Games/T33 - maxPrice/success
+[PASSED TEST] Selling Games/T33 - maxPrice/success
+[PASSED TERMINAL MATCH] Selling Games/T34 - gameNameLen/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T34 - gameNameLen/Failure
+[PASSED FAILURE TEST] Selling Games/T34 - gameNameLen/Failure
+[PASSED TERMINAL MATCH] Selling Games/T34 - gameNameLen/Success
+[PASSED TRANSACTION MATCH] Selling Games/T34 - gameNameLen/Success
+[PASSED TEST] Selling Games/T34 - gameNameLen/Success
+[PASSED TERMINAL MATCH] Selling Games/T35 - uniqueGameName/failure
+[PASSED TRANSACTION MATCH] Selling Games/T35 - uniqueGameName/failure
+[PASSED FAILURE TEST] Selling Games/T35 - uniqueGameName/failure
+[PASSED TERMINAL MATCH] Selling Games/T35 - uniqueGameName/success
+[PASSED TRANSACTION MATCH] Selling Games/T35 - uniqueGameName/success
+[PASSED TEST] Selling Games/T35 - uniqueGameName/success
+[PASSED TERMINAL MATCH] Selling Games/T36 - newGameTransaction/Failure
+[PASSED TRANSACTION MATCH] Selling Games/T36 - newGameTransaction/Failure
+[PASSED FAILURE TEST] Selling Games/T36 - newGameTransaction/Failure
+[PASSED TERMINAL MATCH] Selling Games/T36 - newGameTransaction/Success
+[PASSED TRANSACTION MATCH] Selling Games/T36 - newGameTransaction/Success
+[PASSED TEST] Selling Games/T36 - newGameTransaction/Success
+
+Tests Ran: 114
+Passed Tests excluding Failure cases: 57
+Passed Failure Tests: 57
+Failed Tests: 0
+Program Run Errors: 0
+Terminal Output Inconsistencies: 0
+Transaction File Inconsistencies: 0
+Missing Files: 0
