@@ -19,8 +19,9 @@ class User {
 
         // Methods to check the user's permissions based on account type
         bool isAdmin() const { return accountType == "AA"; }
-        bool canSell() const { return accountType != "BS"; }
-        bool canBuy() const { return accountType != "SS"; }
+        bool isActMgr() const { return accountType == "AM"; }
+        bool canSell() const { return accountType != "BS" && accountType != "AM"; }
+        bool canBuy() const { return accountType != "SS" && accountType != "AM"; }
 
         // Methods to manage the user's credit
         bool hasCredit(double amount) const { return credit + 0.001 >= amount; }
@@ -34,6 +35,7 @@ class User {
             if (accountType == "FS") return "full-standard";
             if (accountType == "BS") return "buy-standard";
             if (accountType == "SS") return "sell-standard";
+            if (accountType == "AM") return "account-manager";
             return "unknown";
         }
 
@@ -43,6 +45,7 @@ class User {
             if (typeName == "full-standard") return "FS";
             if (typeName == "buy-standard") return "BS";
             if (typeName == "sell-standard") return "SS";
+            if (typeName == "account-manager") return "AM";
             return "";
         }
 

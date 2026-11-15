@@ -237,7 +237,7 @@ void FrontEnd::handleCreate() {
     string name;
     string typeName;
     if (!promptForInput("Enter new username: ", name)) return;
-    if (!promptForInput("Enter account type (admin, full-standard, buy-standard, sell-standard): ", typeName)) {
+    if (!promptForInput("Enter account type (admin, full-standard, buy-standard, sell-standard, account-manager): ", typeName)) {
         return;
     }
     name = trim(name);
@@ -257,10 +257,15 @@ void FrontEnd::handleCreate() {
         return;
     }
 
-    // The account type must be one of the four valid types.
+    // The account type must be one of the valid types.
     string accountType = User::codeFromTypeName(typeName);
     if (accountType.empty()) {
         displayError("Unknown account type.");
+        return;
+    }
+    // Account managers may not create admin accounts.
+    if (session.isActMgr() && accountType == "AA") {
+        displayError("Account managers cannot create admin accounts.");
         return;
     }
 
@@ -287,6 +292,11 @@ void FrontEnd::handleDelete() {
     // The admin cannot delete their own account while logged in
     if (name == session.getCurrentUser().getUsername()) {
         displayError("You cannot delete the account you are logged in with.");
+        return;
+    }
+    // Account managers may not delete administrator accounts
+    if (session.isActMgr() && userToDelete->isAdmin()) {
+        displayError("Account managers cannot delete admin accounts.");
         return;
     }
 
@@ -437,7 +447,7 @@ void FrontEnd::handleAddCredit() {
     string amountText;
     string username = session.getCurrentUser().getUsername();
     if (!promptForInput("Enter amount of credit to add: ", amountText)) return;
-    if (session.isAdmin() && !promptForInput("Enter username to credit: ", username)) return;
+    if (session.isAdmin() || session.isActMgr() && !promptForInput("Enter username to credit: ", username)) return;
     username = trim(username);
 
     // The amount must be a valid number greater than 0.0
@@ -485,7 +495,8 @@ bool FrontEnd::isPermitted(const string& command) const {
     const User& user = session.getCurrentUser();
     if (command == "create" || command == "delete" || command == "refund" ||
         command == "listaccounts") {
-        return user.isAdmin();
+        return user.isAdmin() || user.isActMgr();
+        
     }
     if (command == "sell") return user.canSell();
     if (command == "buy") return user.canBuy();

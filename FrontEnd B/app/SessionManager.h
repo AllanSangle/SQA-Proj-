@@ -29,6 +29,7 @@ class SessionManager {
 
         // Returns true if the current user is an admin, false otherwise. If no user is logged in, returns false
         bool isAdmin() const { return loggedIn && currentUser.isAdmin(); }
+        bool isActMgr()const { return loggedIn && currentUser.isActMgr(); }
 
         const User& getCurrentUser() const { return currentUser; }
 

@@ -5,4 +5,5 @@ seller01        SS 000050.00
 pooruser        BS 000010.00
 deleteme        FS 000020.00
 sysadmin        AA 000900.00
+Actmgr          AM 000500.00
 END
