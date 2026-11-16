@@ -6,6 +6,7 @@
 // RUN: ./FrontEnd or to run with a sample test file(must be ran through cmd): ./FrontEnd current_accounts.txt available_games.txt daily_transaction.txt < test.txt
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "FileManager.h"
 #include "FrontEnd.h"
 using namespace std;
@@ -17,7 +18,11 @@ int main(int argc, char* argv[]) {
     string collectionFile = (argc > 3) ? argv[3] : "gamescollection.txt";
     string transactionFile = (argc > 4) ? argv[4] : "transout.atf";
 
+    // clears the transaction file for the session 
+    ofstream mergedFile("mergedtransactions.atf", ios::trunc);
+
     FileManager files(accountsFile, gamesFile, collectionFile, transactionFile);
+    mergedFile.close();
     FrontEnd frontEnd(cin, cout, files);
     frontEnd.run();
     return 0;

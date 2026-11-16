@@ -164,8 +164,10 @@ class AvailableGamesFile:
             if len(line) != 49:
                 self.file_handler.addFatalErrors(f"Invalid game input in \"{self.path}\": {line!r}")
                 return False
-            name = line[:26].strip()
-            seller = line[16:42].strip()
+            price_start = len(line) - 6
+            seller_start = price_start - 1 - 15
+            name = line[:seller_start].strip()
+            seller = line[seller_start:seller_start + 15].strip()
             try:
                 price = float(line[-6:])
             except ValueError:
@@ -291,9 +293,9 @@ class MergedDailyTransactions:
         if code == "03":
             if len(line) != 52:
                 raise ValueError("Invalid sell transaction length")
-            game = line[3:18].strip()
-            seller = line[19:34].strip()
-            price = float(line[-9:])
+            game = line[3:29].strip()
+            seller = line[30:45].strip()
+            price = float(line[-6:])
             return code, game, seller, price
 
         if code == "04":
@@ -308,18 +310,29 @@ class MergedDailyTransactions:
         raise ValueError(f"Invalid transaction code \"{code}\"")
 
     def addUserChanges(self, transaction):
-        code, username, user_type, amount = transaction
+        code = transaction[0]
+
         if code == "01":
+            username, user_type, amount = transaction[1], transaction[2], transaction[3]
             if self.log.userExists(username, self.accounts.accounts):
                 self.log.addConstraintErrors(f"Creating user that already exists ({self._current_line})")
                 return
             self.accounts.addUser(username, user_type)
+
         elif code == "02":
+            username = transaction[1]
             self.accounts.deleteUser(username)
             self.games.games = {
                 name: item for name, item in self.games.games.items()
                 if item["seller"] != username
             }
+
+        elif code == "06":
+            username, user_type, amount = transaction[1], transaction[2], float(transaction[3])
+            if username not in self.accounts.accounts:
+                self.log.addConstraintErrors(f"Adding credit to a non-existent user ({self._current_line})")
+                return
+            self.accounts.accounts[username]["credit"] += amount
 
     def addAvaliableGames(self, transaction):
         code = transaction[0]
@@ -341,8 +354,15 @@ class MergedDailyTransactions:
             _, game, seller, buyer, price = transaction
             self.collection.addOwnedGame(buyer, game)
 
-    
-    
+    def addRefundChanges(self, transaction):
+        if transaction[0] != "05":
+            return
+        _, buyer, seller, amount = transaction
+        if buyer not in self.accounts.accounts or seller not in self.accounts.accounts:
+            self.log.addConstraintErrors(f"Refund refers to a user that does not exist ({self._current_line})")
+            return
+        self.accounts.accounts[seller]["credit"] -= float(amount)
+        self.accounts.accounts[buyer]["credit"] += float(amount)
 
     def run(self):
         if not self.getAllTransactions():
@@ -359,12 +379,10 @@ class MergedDailyTransactions:
                 transaction = self._fields(line)
                 code = transaction[0]
 
-                if code == "01":
+                if code in ("01", "02", "06"):
                     self.addUserChanges(transaction)
-                elif code == "02":
-                    self.addUserChanges(transaction)
-                elif code == "06":
-                    self.addUserChanges(transaction)
+                elif code == "05":
+                    self.addRefundChanges(transaction)
                 elif code == "03":
                     _, game, seller, price = transaction
                     if seller not in self.accounts.accounts:
