@@ -37,6 +37,7 @@ class FileManager {
         bool writeAddCreditRecord(const User& user, double amountAdded) const;
         // Writes the end of session marker to the transaction file
         bool writeEndOfSession(const User& user) const;
+        bool mergeTransactions(const string& mergedFile) const;
 
     private:
         string accountsFile;

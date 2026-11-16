@@ -129,7 +129,7 @@ class UserAccountsFile:
         lines = []
         for username in sorted(self.accounts):
             account = self.accounts[username]
-            lines.append(f"{username:<{15}} {account["type"]:<{2}} {account["credit"]:09.2f}")
+            lines.append(f"{username:<15} {account['type']:<2} {account['credit']:09.2f}")
         lines.append("END")
         return self.file_handler.writeFile(self.path, lines)
 
@@ -388,7 +388,15 @@ class MergedDailyTransactions:
 
 
 def main():
-    accounts_path, games_path, collection_path, merged_path = sys.argv[1:]
+    base_dir = Path(__file__).resolve().parent
+    default_paths = (
+        str(base_dir / "currentaccounts.txt"),
+        str(base_dir / "availablegames.txt"),
+        str(base_dir / "gamescollection.txt"),
+        str(base_dir / "mergedtransactions.atf"),
+    )
+    accounts_path, games_path, collection_path, merged_path = sys.argv[1:5] if len(sys.argv) >= 5 else default_paths
+
     files = FileHandler()
     log = FailedConstraintLog()
     accounts = UserAccountsFile(accounts_path, files)

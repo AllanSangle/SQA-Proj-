@@ -36,6 +36,7 @@ class FrontEnd {
         void handleSearch();
 
         bool isPermitted(const string& command) const;
+        bool mergeTransactions(const string& mergedFile) const;
 
         // Helper functions for user interaction
         bool promptForInput(const string& message, string& response);

@@ -1,3 +1,4 @@
+#include "FileManager.h"
 
 // This file implements the FrontEnd class, which manages user interactions,
 // including login, logout, and account management.
@@ -8,6 +9,7 @@
 #include "TextUtils.h"
 #include <set>
 #include <iomanip>
+#include <fstream>
 using namespace std;
 
 namespace {
@@ -115,6 +117,11 @@ void FrontEnd::handleLogin() {
         displayError("Unknown username.");
         return;
     }
+    
+    if (!files.startTransactionFile()) {
+        displayError("The daily transaction file could not be created.");
+        return;
+    }
 
     // Start a session for the user and display a success message
     session.startSession(*user);
@@ -136,10 +143,51 @@ void FrontEnd::handleLogout() {
         displayError("The daily transaction file could not be written.");
     }
 
+    if (!files.mergeTransactions("mergedtransactions.atf")) {
+        displayError(
+            "Transactions could not be merged. "
+            "The session file is still in transout.atf."
+        );
+        return;
+    }
+
     session.endSession();
     displayMessage("Logged out.");
 }
+bool FileManager::mergeTransactions(const string& mergedFile) const {
+    // Avoid accidentally appending a file to itself.
+    if (mergedFile == transactionFile) {
+        return false;
+    }
 
+    ifstream source(transactionFile);
+    if (!source) {
+        return false;
+    }
+
+    // Read the complete session before changing the merged file.
+    string contents;
+    string line;
+
+    while (getline(source, line)) {
+        contents += line + "\n";
+    }
+
+    if (source.bad() || contents.empty()) {
+        return false;
+    }
+
+    // Append so earlier sessions remain in the merged file.
+    ofstream destination(mergedFile, ios::app);
+    if (!destination) {
+        return false;
+    }
+
+    destination << contents;
+    destination.close();
+
+    return !destination.fail();
+}
 
 // Lists all user accounts (admin only)
 void FrontEnd::handleListAccounts() {
