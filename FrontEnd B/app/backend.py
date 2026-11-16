@@ -31,6 +31,14 @@ class FileHandler:
                 self.addFatalErrors(f"Invalid input in \"{path}\" (Row {number})")
                 return True
         return False
+    def isBadInput(self, path, lines):
+        if lines is None:
+            return True
+        for number, line in enumerate(lines, start=1):
+            if not isinstance(line, str):
+                self.addFatalErrors(f"Invalid input in \"{path}\" (Row {number})")
+                return True
+        return False
     def addFatalErrors(self, fatalError):
         self.fatal_errors.append(f"ERROR: (FATAL) {fatalError}")
 
