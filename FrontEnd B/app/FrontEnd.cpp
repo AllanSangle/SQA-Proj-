@@ -143,6 +143,7 @@ void FrontEnd::handleLogout() {
         displayError("The daily transaction file could not be written.");
     }
 
+    // merges trasnactions and displays error if it fails
     if (!files.mergeTransactions("mergedtransactions.atf")) {
         displayError(
             "Transactions could not be merged. "
@@ -152,6 +153,13 @@ void FrontEnd::handleLogout() {
     }
 
     session.endSession();
+
+    // runs the backend and displays an error if it fails to run
+    if (!files.runBackend("mergedtransactions.atf")) {
+        displayError("Logged out (Backend failed to update files)");
+        return;
+    }
+
     displayMessage("Logged out.");
 }
 bool FileManager::mergeTransactions(const string& mergedFile) const {

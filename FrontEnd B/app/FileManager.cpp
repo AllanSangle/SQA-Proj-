@@ -186,3 +186,8 @@ string FileManager::formatUserRecord(const string& code, const string& username,
     return code + " " + padRight(username, USERNAME_WIDTH) + " " + padRight(accountType, TYPE_WIDTH) + " " + formatMoney(credit, CREDIT_WIDTH);
 }
 
+// Runs the backend using the same command line arguments as the frontend
+bool FileManager::runBackend(const string& mergedFile) const {
+    const string command = "python backend.py " + accountsFile + " " + gamesFile + " " + collectionFile + " " + mergedFile;
+    return system(command.c_str()) == 0;
+}

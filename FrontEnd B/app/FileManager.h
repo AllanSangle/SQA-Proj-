@@ -38,6 +38,9 @@ class FileManager {
         // Writes the end of session marker to the transaction file
         bool writeEndOfSession(const User& user) const;
         bool mergeTransactions(const string& mergedFile) const;
+        // Runs the backend after merging transactions on logout
+        bool runBackend(const string& mergedFile) const;
+
 
     private:
         string accountsFile;
